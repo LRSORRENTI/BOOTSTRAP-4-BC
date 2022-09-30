@@ -361,6 +361,193 @@
       These are the buttons that will often come up throughout the course,
       you'll get used to them more as we go.
     </h3>
+    <h2>BOOTSTRAP TYPOGRAPHY</h2>
+    <h3>
+      This is documentation you can find under content, not contents, on the
+      bootstrap docs:
+    </h3>
+    <div class="container">
+      <a
+        href="https://getbootstrap.com/docs/4.1/content/typography/"
+        class="btn text-light bg-primary active btn-lg"
+        role="button"
+        >Link to bootstrap docs</a
+      >
+    </div>
+    <h3>
+      This page displays the default styles that are applied to 'h1' through
+      'h6'
+    </h3>
+    <h1>h1. Bootstrap heading</h1>
+    <h2>h2. Bootstrap heading</h2>
+    <h3>h3. Bootstrap heading</h3>
+    <h4>h4. Bootstrap heading</h4>
+    <h5>h5. Bootstrap heading</h5>
+    <h6>h6. Bootstrap heading</h6>
+    <h3>
+      Now keep in mind, these defaults are bootstrap defaults, if we had the
+      same h1 through h6 on a regular, non-bootsrapped html page, they would
+      look different, h1-h6 are all little smaller on a regular html page,
+    </h3>
+    <h3>
+      There are also utility classes h1-h6, we can add these to any sort of text
+      content, and that specified paragraph tag will match the styling of an h1
+      or h2 etc..
+    </h3>
+    <div class="container">
+      <p class="h1">h1. Bootstrap heading</p>
+      <p class="h1">Make me an h1!</p>
+      <p class="h2">h2. Bootstrap heading</p>
+      <p class="h3">h3. Bootstrap heading</p>
+      <p class="h4">h4. Bootstrap heading</p>
+      <p class="h5">h5. Bootstrap heading</p>
+      <p class="h6">h6. Bootstrap heading</p>
+    </div>
+    <h3>
+      Keep in mind semantically we should never have more than one h1 tag, just
+      like we shouldn't have more than one title on a page, but if we want to
+      style a peice of text with the same content size as an h1, we can use
+      class="h1"
+    </h3>
+    <h3>Here's the same paragraph as above but with an h1 class</h3>
+    <p class="h1">
+      Keep in mind semantically we should never have more than one h1 tag, just
+      like we shouldn't have more than one title on a page, but if we want to
+      style a peice of text with the same content size as an h1, we can use
+      class="h1"
+    </p>
+    <h2>
+      ======================================================================
+    </h2>
+    <h3>We can also use headings and fancy display headings:</h3>
+    <h3>
+      Fancy display heading
+      <small class="text-muted">With faded secondary text</small>
+    </h3>
+    <h3>
+      Fancy display heading
+      <small class="text-danger">With faded secondary text</small>
+    </h3>
+    <h2>
+      ======================================================================
+    </h2>
+    <h3>
+      We can also use the display class, to give our headings a more pronouced
+      and evident font-size / line-height:
+    </h3>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
+    <h3>
+      Next we have a class called 'lead', lead makes a paragraph stand out
+    </h3>
+    <h3>Regular paragraph below</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum
+      sunt omnis laboriosam eum asperiores soluta facilis vitae, ex unde
+      expedita doloribus provident nulla fugit, est perferendis, assumenda alias
+      eligendi?
+    </p>
+    <h3>===================================================================</h3>
+    <h3>Paragraph with the 'lead' class below</h3>
+    <p class="lead">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste quidem
+      facere natus, incidunt voluptatibus harum excepturi laudantium doloremque
+      minima explicabo sed quaerat, ducimus sapiente ipsam error expedita? Rem,
+      dignissimos esse.
+    </p>
+    <h3>
+      ============================================================================
+    </h3>
+    <h3>Next we have 'inline text elements:</h3>
+    <p>You can use the mark < mark >tag to <mark>highlight</mark> text.</p>
+    <p>
+      <del>
+        < del >This line of text is meant to be treated as deleted text.</del
+      >
+    </p>
+    <p>
+      <s>This line of text is meant to be treated as no longer accurate.</s>
+    </p>
+    <p>
+      <ins
+        >This line of text is meant to be treated as an addition to the
+        document.</ins
+      >
+    </p>
+    <p><u>This line of text will render as underlined</u></p>
+    <p>
+      <small>This line of text is meant to be treated as fine print.</small>
+    </p>
+    <p><strong>This line rendered as bold text.</strong></p>
+    <p><em>This line rendered as italicized text.</em></p>
+    <h3>
+      ==================================================================================
+    </h3>
+    <h3>
+      Blockquotes, blockquotes change the font size, adds a margin, that's
+      pretty much it, commonly used when referencing a quote, commonly used with
+      a footer.
+    </h3>
+    <blockquote class="blockquote">
+      <p class="mb-0">
+        Without footer: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer posuere erat a ante.
+      </p>
+    </blockquote>
+    <blockquote class="blockquote">
+      <p class="mb-0">
+        With footer: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Integer posuere erat a ante.
+      </p>
+      <footer class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+    <h3>
+      And the < p class="mb-0" > Stands for 'margin-bottom', if we alter that
+      mb-0 , the footer portion will change position
+    </h3>
+    <blockquote class="blockquote">
+      <p class="mb-5">
+        This is < p class= "mb-5" Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Integer posuere erat a ante.
+      </p>
+      <footer class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote">
+      <p class="mb-5">
+        This is < p class= "mb-5" Lorem ipsum dolor sit amet, consectetur
+        adipiscing elit. Integer posuere erat a ante.
+      </p>
+      <footer class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote text-right">
+      <p class="mb-5">
+        This is < p class= "mb-5", with 'text-right' added Lorem ipsum dolor sit
+        amet, consectetur adipiscing elit. Integer posuere erat a ante.
+      </p>
+      <footer class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+    <blockquote class="blockquote text-center">
+      <p class="mb-5">
+        This is < p class= "mb-5" with 'text-center' Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Integer posuere erat a ante.
+      </p>
+      <footer class="blockquote-footer">
+        Someone famous in <cite title="Source Title">Source Title</cite>
+      </footer>
+    </blockquote>
+
+    <p class="display-5 text-right">Text aligned to the right</p>
+    <p class="display-6">By default text is aligned left</p>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
