@@ -225,7 +225,90 @@
       sticking with the defaults in bootstrap is one of the main criticisms of
       using bootstrap
     </h3>
+    <h2>BUTTONS</h2>
+    <h3>
+      Let's go over our first component in Bootstrap, and you'll find buttons in
+      the components section of bootstrap documentation listed alphabetically
+    </h3>
+    <h3>
+      In order to create one of these button components we need to add a class
+      of 'btn' and also specify a color for that button, so the syntax looks
+      like: '< button type="button" class="btn" btn-primary" > Primary < /
+      button >'
+    </h3>
+    <button class="btn text-light bg-primary">Click me!</button>
+    <h3>
+      Now as we notice, when we've added our button, it's all the way on the
+      left edge, so what we can do is add a container, which will come up in the
+      grid system, so let's put a new button below but inside of a container!
+    </h3>
+    <h3>
+      Let's type '.container' which all auto create a container class, and it
+      also defaults to a div
+    </h3>
 
+    <button class="btn text-light bg-success">I'm a button!</button>
+    <div class="container">
+      <button class="btn text-light bg-success">I'm a button!</button>
+    </div>
+    <h3>
+      So you can see all that did was give us some spacing, our old button is on
+      the far left side but our new div class button is indented!
+    </h3>
+    <h3>Let's experiment and make a few more buttons</h3>
+    <h2>REGULAR BUTTONS</h2>
+    <div class="container">
+      <button class="btn text-light bg-success">I'm a button!</button>
+      <button class="btn text-light bg-primary">I'm a button!</button>
+      <button class="btn text-light bg-secondary">I'm a button!</button>
+      <button class="btn text-light bg-info">I'm a button!</button>
+      <button class="btn text-light bg-danger">I'm a button!</button>
+    </div>
+    <h3>
+      And as we can see if we change the size of the window, our display is
+      moving around, the buttons are moving dynamically as we shrink or expand
+      our window
+    </h3>
+    <h3>
+      Containers are the most basic layout in Bootstrap, and are required when
+      using it's default grid system, we can choose a responsive fixed-width
+      container (meaning it's 'max-width' changes at each breakpoint) or
+      'fluid-width'( meaning it's 100% wide all of the time! )
+    </h3>
+    <h3>
+      We can also make a link look like a button, we use the anchor tag followed
+      by class , href, and a role. The syntax looks like: '< a class="btn
+      btn-primary" href="#"" role="button" > Link < /a >'
+    </h3>
+    <h2>LINK BUTTONS</h2>
+    <a href="" class="btn btn-success">This is a link</a>
+    <h3>
+      So the above looks like a button, but it's still an anchor tag, some more
+      examples:
+    </h3>
+    <div class="container">
+      <a class="btn btn-primary" href="#" role="button">I'm a Link</a>
+      <button class="btn btn-primary" type="submit">I'm a Button</button>
+      <input class="btn btn-primary" type="button" value="Input" />
+      <input class="btn btn-primary" type="submit" value="Submit" />
+      <input class="btn btn-primary" type="reset" value="Reset" />
+    </div>
+    <h3>
+      There are also outline buttons, so instead of having the background color
+      set, it will just be the outline of the button that's colored, like this:
+    </h3>
+    <h2>OUTLINE BUTTONS:</h2>
+    <div class="container">
+      <button type="button" class="btn btn-outline-primary">Primary</button>
+      <button type="button" class="btn btn-outline-secondary">Secondary</button>
+      <button type="button" class="btn btn-outline-success">Success</button>
+      <button type="button" class="btn btn-outline-danger">Danger</button>
+      <button type="button" class="btn btn-outline-warning">Warning</button>
+      <button type="button" class="btn btn-outline-info">Info</button>
+      <button type="button" class="btn btn-outline-light">Light</button>
+      <button type="button" class="btn btn-outline-dark">Dark</button>
+    </div>
+    <h3>Next we have different sizes for buttons,</h3>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
