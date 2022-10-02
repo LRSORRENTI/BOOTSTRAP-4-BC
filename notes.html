@@ -547,6 +547,7 @@
     </blockquote>
 
     <p class="display-5 text-right">Text aligned to the right</p>
+    <p class="display-5 text-center">I am a p tag centered</p>
     <p class="display-6">By default text is aligned left</p>
 
     <h2>
@@ -555,7 +556,188 @@
     </h2>
     <h3>
       The reason we're looking at this now is because everything we've seen so
-      far comes together in the JUMBOTRON,
+      far comes together in the JUMBOTRON, and JUMBOTRON is a way to highlight
+      extra attention on feature content / information
+    </h3>
+    <h3>
+      WE NEVER want to leave our jumbotrons unstyled, only if you're using it
+      for personal purposes, but for display, it must be customized!
+    </h3>
+    <h2>JUMBOTRON example:</h2>
+    <div class="jumbotron">
+      <h1 class="display-3">
+        Hello, world! Also this JUMBOTRON is NOT inside of a container div, but
+        the JUMBOTRON below is inside a container div
+      </h1>
+      <p class="lead">
+        This is a simple hero unit, a simple jumbotron-style component for
+        calling extra attention to featured content or information.
+      </p>
+      <hr class="my-2" />
+      <p>
+        It uses utility classes for typography and spacing to space content out
+        within the larger container.
+      </p>
+      <p class="lead">
+        <a class="btn btn-primary btn-lg" href="#!" role="button"
+          >Some action</a
+        >
+      </p>
+    </div>
+    <div class="container">
+      <div class="jumbotron">
+        <h2 class="display-2">Hello world</h2>
+        <p class="lead">
+          This is a jumbotron hero / info display, this is our 'lead' paragraph
+          that goes along with our heading
+        </p>
+        <hr class="my-4" />
+        <p>
+          Above this 'p' tag is a divider, the divider is used to separate the
+          jumbotron
+        </p>
+        <hr class="my-2" />
+        <p>Here's another, and a button below!</p>
+        <a class="btn btn-primary" href="#" role="button"> Learn more </a>
+      </div>
+    </div>
+    <h2>Let's copy it again and tweak it some more!</h2>
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-3">Adopt a Pet</h1>
+        <p class="lead">
+          Apporximately 7.6 million companion animals enter animal shelters
+          nationwide every year!
+        </p>
+
+        <p class="lead">
+          <a class="btn btn-success btn-lg" href="#!" role="button"
+            >Apply Now!</a
+          >
+        </p>
+      </div>
+    </div>
+    <h2>Now let's look at FLUID JUMBOTRON</h2>
+    <h3>
+      To make the jumbotron full width, and without rounded corners, add the .
+      jumbotron-fluid modifier class and add a . container / . container-fluid
+      div within
+    </h3>
+    <h3>
+      Let's add one now, remember, we don't add this inside of a container div
+    </h3>
+    <div class="jumbotron jumbotron-fluid">
+      <h1 class="display-3">Adopt a Pet</h1>
+    </div>
+    <h3>
+      Now this isn't ideal, now our text is all the way on the left side, so
+      usually we'll add our container INSIDE the jumbotron div, to give our text
+      / content some space:
+    </h3>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">Adopt a Pet</h1>
+        <p class="lead">
+          Apporximately 7.6 million companion animals enter animal shelters
+          nationwide every year!
+        </p>
+        <a href="#" class="btn btn-danger btn-lg" role="button"> Apply Now</a>
+      </div>
+    </div>
+    <h3>
+      It's important we change the default grey backgorund of our jumbotrons,
+      remember the main downfall of BOOTSTRAP is it makes a lot of it's sites
+      look 'same-ish', we must customize our BOOTSTRAP content to avoid this!
+    </h3>
+    <div class="container">
+      <div class="jumbotron bg-dark text-light">
+        <h1 class="display-3">Adopt a Pet</h1>
+        <p class="lead">
+          Apporximately 7.6 million companion animals enter animal shelters
+          nationwide every year!
+        </p>
+
+        <p class="lead">
+          <a
+            class="btn btn-outline-danger bg-info text-white btn-lg"
+            href="#!"
+            role="button"
+            >Apply Now!</a
+          >
+        </p>
+      </div>
+    </div>
+    <h3>
+      Let's customize some more! "Add div id of 'blue', then add our style tag :
+      #blue{ background: b lue ; }
+    </h3>
+    <style>
+      #blue {
+        background-color: blue;
+        color: antiquewhite;
+      }
+      #magenta {
+        background-color: magenta;
+        color: black;
+      }
+    </style>
+    <div class="container">
+      <div id="blue" class="jumbotron">
+        <h1 class="display-3">Adopt a Pet</h1>
+        <p class="lead">
+          Apporximately 7.6 million companion animals enter animal shelters
+          nationwide every year!
+        </p>
+        <p>
+          As you can see, this shade of blue is NOT available in the default
+          BOOTSTRAP settings, obviously this shade of blue isn't visually
+          appealing but it's to illustrate that we NEED to make alterations to
+          BOOTSTRAPS default colors it doesn't look like every other BOOTSTRAP
+          site
+        </p>
+        <p>
+          We'll do the same with the button below, add an id selector inside our
+          style tags above that will target this button
+        </p>
+        <p class="lead">
+          <a id="magenta" class="btn btn-lg" href="#!" role="button"
+            >Apply Now!</a
+          >
+        </p>
+      </div>
+    </div>
+    <h3>Let's do another jumbtron but use an image as the backgorund</h3>
+
+    <div id="jumbo" class="jumbotron jumbotron-fluid bg-dark text-light">
+      <div class="container">
+        <h1 class="display-3">Adopt a Pet</h1>
+        <p class="lead">
+          Apporximately 7.6 million companion animals enter animal shelters
+          nationwide every year!
+        </p>
+
+        <p class="lead">
+          <a id="butn" class="btn btn-lg" href="#!" role="button">Apply Now!</a>
+        </p>
+      </div>
+    </div>
+    <style>
+      #jumbo {
+        background-image: url(https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80);
+        font-family: "Courier New", Courier, monospace;
+      }
+      #butn {
+        background-color: lightgreen;
+        color: rgb(35, 39, 42);
+        font-size: larger;
+      }
+    </style>
+    <h3>
+      Okay so that's it for jumbotrons, I noticed that if you set the font color
+      inside the class selector of a button or div, that font color has priority
+      over the style tag, at least it seems to... I always thought id selectors
+      had top specifiity but maybe it's different in these class = btn
+      text-light or btn text-danger etc..
     </h3>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
