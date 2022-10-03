@@ -1000,14 +1000,152 @@
       <li class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</li>
       <li class="shadow p-3 mb-5 bg-white rounded">Regular shadow</li>
       <li class="shadow-lg p-3 mb-5 bg-white rounded">Large shadow</li>
+      <li class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</li>
+      <li class="shadow p-3 mb-5 bg-white rounded">Regular shadow</li>
     </ul>
     <h3>We can also combine borders and shadows:</h3>
     <h3 class="text-center border border-info shadow p-3 mb-5 bg-white rounded">
+      <ul>
+        <li class="text-center shadow p-3 mb-5 bg-white rounded">
+          Regular shadow
+        </li>
+      </ul>
       BORDER & SHADOW COMBINED
     </h3>
     <h3>Difficult to see but it's sort've there</h3>
     <h2>SPACING UTILITIES: Margin and padding</h2>
-    <h3></h3>
+
+    <h3>
+      Next up is spacing utilities, they're very useful, they come up a lot!
+      They're used very frequently
+    </h3>
+    <h3>From the BOOTSTRAP docs:</h3>
+    <h3>
+      Spacing: Bootstrap includes a wide range of shorthand responsive margin
+      and padding utility classes to modify an element's appearance.
+    </h3>
+    <h3>
+      How it works Assign responsive-friendly margin or padding values to an
+      element or a subset of its sides with shorthand classes. Includes support
+      for individual properties, all properties, and vertical and horizontal
+      properties. Classes are built from a default Sass map ranging from .25rem
+      to 3rem.
+    </h3>
+    <h3>
+      Notation Spacing utilities that apply to all breakpoints, from xs to xl,
+      have no breakpoint abbreviation in them. This is because those classes are
+      applied from min-width: 0 and up, and thus are not bound by a media query.
+      The remaining breakpoints, however, do include a breakpoint abbreviation.
+      The classes are named using the format {property}{sides}-{size} for xs and
+      {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl. Where
+      property is one of: m - for classes that set margin p - for classes that
+      set padding Where sides is one of: t - for classes that set margin-top or
+      padding-top b - for classes that set margin-bottom or padding-bottom l -
+      for classes that set margin-left or padding-left r - for classes that set
+      margin-right or padding-right x - for classes that set both *-left and
+      *-right y - for classes that set both *-top and *-bottom blank - for
+      classes that set a margin or padding on all 4 sides of the element Where
+      size is one of: 0 - for classes that eliminate the margin or padding by
+      setting it to 0 1 - (by default) for classes that set the margin or
+      padding to $spacer * .25 2 - (by default) for classes that set the margin
+      or padding to $spacer * .5 3 - (by default) for classes that set the
+      margin or padding to $spacer 4 - (by default) for classes that set the
+      margin or padding to $spacer * 1.5 5 - (by default) for classes that set
+      the margin or padding to $spacer * 3 auto - for classes that set the
+      margin to auto (You can add more sizes by adding entries to the $spacers
+      Sass map variable.)
+    </h3>
+    <h3>
+      Examples Here are some representative examples of these classes: .mt-0 {
+      margin-top: 0 !important; } .ml-1 { margin-left: ($spacer * .25)
+      !important; } .px-2 { padding-left: ($spacer * .5) !important;
+      padding-right: ($spacer * .5) !important; } .p-3 { padding: $spacer
+      !important; } Horizontal centering Additionally, Bootstrap also includes
+      an .mx-auto class for horizontally centering fixed-width block level
+      content—that is, content that has display: block and a width set—by
+      setting the horizontal margins to auto. Centered element
+    </h3>
+    <h3>
+      Just as a reminder, margin is outside of the div or element, and padding
+      is inside
+    </h3>
+    <div class="mx-auto" style="width: 200px">Centered element</div>
+
+    <h2>Let's practice with some examples:</h2>
+    <div class="container">
+      <h1 class="p-0 bg-info d-inline-block">padding-0</h1>
+      <h1 class="p-1 bg-info d-inline-block">padding-1</h1>
+      <h1 class="p-2 bg-info d-inline-block">padding-2</h1>
+      <h1 class="p-3 bg-info d-inline-block">padding-3</h1>
+      <h1 class="p-4 bg-info d-inline-block">padding-4</h1>
+      <h1 class="p-5 bg-info d-inline-block">padding-5</h1>
+    </div>
+    <h2>
+      As we can see, as we increase padding levels, the inside of our content
+      container expands
+    </h2>
+    <h2>
+      Also keep in mind, if we increase the font-size at the root HTML element,
+      the padding grows relative to the font-size
+    </h2>
+    <h2>Let's practice more but with buttons this time:</h2>
+    <div class="container">
+      <button class="pt-5 btn btn-lg btn-warning">padding-top-5</button>
+      <button class="pb-5 btn btn-lg btn-warning">padding-bottom-5</button>
+      <button class="pl-5 btn btn-lg btn-warning">padding-left-5</button>
+      <button class="pr-5 btn btn-lg btn-warning">padding-right-5</button>
+      <button class="py-5 btn btn-lg btn-warning">
+        padding-top-and-bottom-5
+      </button>
+      <button class="px-5 btn btn-lg btn-warning">
+        padding-left-&-right-5
+      </button>
+    </div>
+    <h2>
+      Let's look at margin now, and it's very similar, just change the 'p' to
+      'm'
+    </h2>
+    <div class="container">
+      <button class="m-5 pt-5 btn btn-lg btn-warning">
+        padding-top-5, margin-5
+      </button>
+      <button class="m-4 pl-5 btn btn-lg btn-warning">
+        padding-bottom-5, margin-4
+      </button>
+      <button class="m-3 pr-5 btn btn-lg btn-warning">
+        padding-left-5, margin 3
+      </button>
+      <button class="m-2 px-5 btn btn-lg btn-warning">
+        padding-right-5, margin 2
+      </button>
+      <button class="m-5 py-5 btn btn-lg btn-warning">
+        padding-top-and-bottom-5, margin-5
+      </button>
+      <button class="px-5 btn btn-lg btn-warning">
+        padding-left-&-right-5
+      </button>
+    </div>
+    <h3>
+      Now one thing to emphasize is that we can selectively apply these at
+      different breakpoints:
+    </h3>
+    <style>
+      .span7 {
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+      }
+    </style>
+    <div class="container">
+      <h1 class="display-1">RESPONSIVE STUFF!!</h1>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+      <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+    </div>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
