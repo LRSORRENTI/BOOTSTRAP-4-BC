@@ -872,6 +872,142 @@
         <li>Block</li>
       </ul>
     </h3>
+    <div class="container">
+      <h1 class="bg-dark text-white">This is h1 block</h1>
+      <h1 class="bg-dark text-white d-inline">This is h1 inline</h1>
+      <h1 class="bg-dark text-white d-none">This is h1 display: none</h1>
+      <span class="bg-info text-white">I'm a regular span</span>
+      <span class="bg-info text-white d-block">I'm a block span</span>
+    </div>
+    <h3>
+      Right now both of these are block level elements, but if we give the
+      second one a class of 'd-inline', it becomes inline, and if we copy it and
+      add 'd-none' it dissappears, it's no longer visible
+    </h3>
+    <h3>
+      We could also work the other way around and take an anchor tag or a span
+    </h3>
+    <h3>Lets copy the container from above an change it a bit:</h3>
+    <div class="container">
+      <h1 class="bg-dark text-white">This is h1 block</h1>
+      <h1 class="bg-dark text-white d-inline">This is h1 inline</h1>
+      <h1 class="bg-dark text-white d-none">This is h1 display: none</h1>
+      <span class="bg-info text-white">I'm a regular span</span>
+      <span class="bg-info text-white d-block">I'm a block span</span>
+      <h1 class="d-none d-sm-block">HIDDEN ON XTRA-SMALL</h1>
+      <h1 class="d-none d-md-block">HIDDEN ON MEDIUM</h1>
+      <h1 class="d-none d-lg-block">HIDDEN ON LARGE</h1>
+      <h1 class="d-none d-xl-block">HIDDEN ON XTRA-LARGE</h1>
+      <h3>
+        And yes after adding the 'd-none d-sm-block, when we shrink the window
+        to it's smallest size the block text 'HIDDEN ON XTRA-SMALL' dissappears
+      </h3>
+    </div>
+    <div class="container">
+      <h1>
+        CURRENT BREAKPOINT IS:
+        <span class="d-inline d-sm-none">XS</span>
+        <span class="d-none d-sm-inline d-md-none">SM</span>
+        <span class="d-none d-md-inline d-lg-none">MD</span>
+        <span class="d-none d-lg-inline d-xl-none">LG</span>
+        <span class="d-none d-xl-inline">XL</span>
+      </h1>
+    </div>
+    <h3>
+      So the above text will responsively change based on the break point: to
+      code itself looks like: < span class="d-inline d-sm-none">XS< /span> <
+      span class="d-none d-sm-inline d-md-none">SM< /span> < span class="d-none
+      d-md-inline d-lg-none">MD< /span> < span class="d-none d-lg-inline
+      d-xl-none">LG< /span> < span class="d-none d-xl-inline">XL< /span>
+    </h3>
+    <h3>
+      That's the basics of the display utility, we can change something from
+      inline to block, or from block to inline based on the size of the window
+    </h3>
+    <h2>BORDERS AND SHADOWS</h2>
+    <h3>
+      Next up are two utilities we'll go over together, these are quick and easy
+      to pick up, let's go look at the docs:
+    </h3>
+    <h3>
+      Use border utilities to quickly style the border and border-radius of an
+      element. Great for images, buttons, or any other element. Use border
+      utilities to add or remove an element's borders. Choose from all borders
+      or one at a time.
+    </h3>
+    <style>
+      span2 {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+        /* we need to include the above inline-block,
+      if we exclude that display, nothing will appear
+      and if we changed it to display:block it would all 
+      flow in one direction*/
+      }
+    </style>
+
+    <div class="container">
+      <span2 class="border border-primary">border</span2>
+      <span2 class="border border-secondary">border</span2>
+      <span2 class="border border-success">border</span2>
+      <span2 class="border border-danger">border</span2>
+      <span2 class="border border-info">border</span2>
+    </div>
+    <h2>Changing the border</h2>
+    <div class="container">
+      <span2 class="border border-primary">border</span2>
+      <span2 class="border-top border-danger">border-top</span2>
+      <span2 class="border-right border-success">border-right</span2>
+      <span2 class="border-left border-right border-danger"
+        >border-left & border-right</span2
+      >
+      <span2 class="border border-info">border</span2>
+    </div>
+    <h3>
+      We can also subtract borders by setting 'border-0' , or border-top-0,
+      border-right-0, border-bottom-0, border-left-0
+    </h3>
+    <div class="container">
+      <span2 class="border-0 border-primary">border-0</span2>
+      <span2 class="border border-bottom-0 border-primary"
+        >border-bottom-0</span2
+      >
+      <span2 class="border border-right-0 border-primary">border-right-0</span2>
+      <span2 class="border border-left-0 border-right border-primary"
+        >border-left-0 & border-right</span2
+      >
+      <span2 class="border border-primary">border</span2>
+    </div>
+    <h3>
+      We can also add border radius, which will round the sharp corners of our
+      borders
+    </h3>
+    <h3>BORDER RADIUS</h3>
+    <div class="container">
+      <span2 class="border border-primary rounded">border</span2>
+      <span2 class="border border-secondary rounded-circle"
+        >border-circle</span2
+      >
+      <span2 class="border border-success rounded">border</span2>
+      <span2 class="border border-danger rounded-circle">border-circle</span2>
+      <span2 class="border border-info rounded">border</span2>
+    </div>
+    <h2>SHADOWS</h2>
+    <h3>With shadows, we have 3 options:</h3>
+    <ul>
+      <li class="shadow-none p-3 mb-5 bg-light rounded">No shadow</li>
+      <li class="shadow-sm p-3 mb-5 bg-white rounded">Small shadow</li>
+      <li class="shadow p-3 mb-5 bg-white rounded">Regular shadow</li>
+      <li class="shadow-lg p-3 mb-5 bg-white rounded">Large shadow</li>
+    </ul>
+    <h3>We can also combine borders and shadows:</h3>
+    <h3 class="text-center border border-info shadow p-3 mb-5 bg-white rounded">
+      BORDER & SHADOW COMBINED
+    </h3>
+    <h3>Difficult to see but it's sort've there</h3>
+    <h2>SPACING UTILITIES: Margin and padding</h2>
+    <h3></h3>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
