@@ -759,6 +759,63 @@
       some way!
     </h3>
     <h2>Intro to: BOOTSTRAP 4 BREAKPOINTS</h2>
+    <h3>
+      One of the benefits of BOOTSTRAP is that it helps create responsive
+      designs very quickly, making fully responsive websites in vanilla CSS
+      takes longer, and sometimes is the right choice, but sometimes using
+      libraries like BOOTSTRAP or TAILWIND CSS can be the correct tools
+      depending on the job
+    </h3>
+    <h3>
+      When we shrink a window that has a responsive design, there's a certain
+      point when you mininmize the window where the content of the page will
+      responsively change to fit the size of the window. That exact point where
+      the window responsively changes is called the BREAKPOINT
+    </h3>
+    <h3>
+      We could set our own breakpoints with speciific pixel sizes, like at
+      1102px wide chnage the webpage resposively, then if it shrinks to 700px
+      wide, change it again
+    </h3>
+    <h3>
+      BOOTSTRAP has some built-in numbers that it works with, for ex: on the
+      BOOTSTRAP documentation, under navbars we can see the underlying code that
+      will make that navbar resposive: nav class="navbar navbar-expand-lg
+      navbar-light bg-light" >
+    </h3>
+    <h3>
+      In the above code snippet, it's the 'navbar-expand-lg' that will cause the
+      webpage to responsively change, here's the official BOOTSTRAP docs on
+      RESPONSIVE BREAKPOINTS:
+    </h3>
+    <h3>
+      Since Bootstrap is developed to be mobile first, we use a handful of media
+      queries to create sensible breakpoints for our layouts and interfaces.
+      These breakpoints are mostly based on minimum viewport widths and allow us
+      to scale up elements as the viewport changes. Bootstrap primarily uses the
+      following media query ranges—or breakpoints—in our source Sass files for
+      our layout, grid system, and components.
+    </h3>
+    <h3>
+      // Extra small devices (portrait phones, less than 576px) // No media
+      query for `xs` since this is the default in Bootstrap // Small devices
+      (landscape phones, 576px and up) @media (min-width: 576px) { ... } //
+      Medium devices (tablets, 768px and up) @media (min-width: 768px) { ... }
+      // Large devices (desktops, 992px and up) @media (min-width: 992px) { ...
+      } // Extra large devices (large desktops, 1200px and up) @media
+      (min-width: 1200px) { ... } -->
+    </h3>
+    <h3>QUICK BREAKPOINT LIST:</h3>
+    <h3>
+      <ul>
+        <li>
+          SMALL(sm)(phones): portrait = < 576px, landscape = 576 - 700ishpx
+        </li>
+        <li>MEDIUM(md)(tablets): > 768px</li>
+        <li>LARGE(lg): 992px</li>
+        <li>XTRA-LARGE(XL): 1200px</li>
+      </ul>
+    </h3>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
