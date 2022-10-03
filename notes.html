@@ -816,6 +816,62 @@
         <li>XTRA-LARGE(XL): 1200px</li>
       </ul>
     </h3>
+    <h3>
+      This is the responsive design example colt used in his BREAKPOINTS
+      demonstration:
+    </h3>
+    <h3>
+      Inside our demo app.css: body{ background-color: lightsalmon ; } @media
+      (min-width: 576px) { body{ background-color: lightblue; } } @media
+      (min-width: 768px) { body{ background-color: lightgreen; } } @media
+      (min-width: 992px) { body{ background-color: lightgoldenrodyellow; } }
+      @media (min-width: 1200px) { body{ background-color: lightgrey; } }
+    </h3>
+    <h3>
+      Essentially this shows that when altering screen-size, starting with the
+      smallest which is salmon, as you expand the screen the colors change based
+      on each specified pixel size, once the window reaches 577px, it chnages to
+      lightblue, then when it reaches 768, it changes to lightgreen, and so on
+      until it reaches the max value with is lightgrey
+    </h3>
+    <h3>
+      In summary, these are underlying pixel values that bootstrap uses to
+      resposively change the layout of a webpage, you don't need to memorize the
+      pixel values
+    </h3>
+    <h2>BOOTSTRAP: DISPLAY UTILITY</h2>
+    <h3>
+      Now that we've quickly gone over bootstrap breakpoints, let's look at
+      common use cases for them, this is used to 'hide' or 'show' things
+      depending on the size of the screen
+    </h3>
+    <h3>
+      For example we could have an image related to a article, but if the
+      webpage is minimized to it's smallest breakpoint, only the article text
+      will appear, the image will only reappear if the user changes the size of
+      the screen to it goes back to the medium or large breakpoint
+    </h3>
+    <h3>
+      We can do this using BOOTSTRAPS DISPLAY UTILITY, from the docs: Quickly
+      and responsively toggle the display value of components and more with our
+      display utilities. Includes support for some of the more common values, as
+      well as some extras for controlling display when printing.
+    </h3>
+    <h3>
+      Display utility classes that apply to all breakpoints, from xs to xl, have
+      no breakpoint abbreviation in them. This is because those classes are
+      applied from min-width: 0; and up, and thus are not bound by a media
+      query. The remaining breakpoints, however, do include a breakpoint
+      abbreviation.
+    </h3>
+    <h3>
+      The most commonly used are:
+      <ul>
+        <li>None</li>
+        <li>Inline</li>
+        <li>Block</li>
+      </ul>
+    </h3>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
