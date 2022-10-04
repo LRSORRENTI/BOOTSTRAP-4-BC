@@ -1171,16 +1171,147 @@
           Small shadow with padding(3) all around and margin(5) on top and
           bottom
         </div>
-
+        <h3>
+          Okay so for the above small shadow, I did 'shadow-sm p-3 mt-5 mb-5',
+          Colt simplified it: shadow-sm p-3 my-5, so instead of mt-5/mb-5, we
+          can just use the Y axis with my-5
+        </h3>
         <!-- Make a large green outline button that has no padding at XS, has padding(3) at MD and has padding(5) at XL-->
-        <button class="btn bg-light border border-success p-xs-0 p-md-3 p-xl-5">
+        <button class="btn btn-outline-success p-xs-0 p-md-3 p-xl-5">
           I GROW
         </button>
-
+        <h3>
+          Okay so for the above I did: btn btn-outline-success p-xs-0 p-md-3
+          p-xl-5, which wasn't correct, colt did: btn btn-outline-success p-0
+          p-md-3 p-xl-5, so what I did wasn't correct but it was sort've similar
+          in it's function
+        </h3>
         <h2 class="text-center d-none d-sm-none d-md-block">
           Center me, and make me hide at XS and SM
         </h2>
+        <h3>
+          Okay so colt cleared up the problem I had with the above text, so
+          initially we'll say "always d-none (display nothing) unless I specify
+          afterwards like: d-none d-md-block d-lg-block-d-xl-block", so don't
+          display anything, unless it's a medium or greater size window
+        </h3>
       </div>
+    </div>
+    <h2 class="m-5">INTRO TO FORMS: Getting user input</h2>
+    <h3>
+      Usually there are many forms/inputs on a webpage, a search bar, or a sign
+      in, or some input field for the user
+    </h3>
+    <h3>
+      Keep in mind we haven't gone over the 'grid' system yet so our forms will
+      take up the entire screen, usually we'll specify how large the input field
+      is, but that will come later when we go over the grid system
+    </h3>
+    <h3>
+      First we'll go over 'form control' and 'form group', there are different
+      types of forms for different types of inputs, like 'choose file' input, or
+      sign-up form with name, address, city, state zip code etc..
+    </h3>
+    <h3>
+      First though, to get bootstrap to style inputs, we use the 'form-control'
+      class
+    </h3>
+    <div class="container m-5">
+      <h2>FORM CONTROLS</h2>
+      <form>
+        <input type="email" id="" placeholder="enter your email" />
+      </form>
+      <h3>The above is default styling, let's change it with bootstrap</h3>
+      <form>
+        <input
+          type="email"
+          id=""
+          class="form-control"
+          placeholder="Enter your email"
+        />
+      </form>
+      <h3>
+        Also it's best practice to include a label, so let's add one also keep
+        in mind the 'for' inside our label tag must match our 'id' in the input
+        tag, so let's give our 'for' a value of 'email', then add 'email' to our
+        'id'
+      </h3>
+      <form>
+        <label for="email">Email Address</label>
+        <input
+          type="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your email"
+        />
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          placeholder="Enter your password"
+        />
+      </form>
+    </div>
+    <h3>
+      We should also use something in the bootstrap docs called 'form groups'
+    </h3>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+          />
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Enter your password"
+          />
+          <small class="text-muted"
+            >Password must be at least 12 characters</small
+          >
+        </div>
+      </form>
+    </div>
+    <h3>
+      We can also add helper text with the 'small' element with text-muted, and
+      add 'password must be at least 12 characters'
+    </h3>
+    <h3 class="p-4">Now let's add a 'select'</h3>
+    <div class="container">
+      <h2>Select</h2>
+      <form>
+        <div class="form-group">
+          <label for="select"></label>
+          <select id="select">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </form>
+      <form>
+        <h2 p-4>With form control:</h2>
+        <h2>Select</h2>
+        <div class="form-group">
+          <label for="select">Select</label>
+          <select id="select" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </form>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
