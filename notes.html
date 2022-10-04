@@ -1037,23 +1037,25 @@
       applied from min-width: 0 and up, and thus are not bound by a media query.
       The remaining breakpoints, however, do include a breakpoint abbreviation.
       The classes are named using the format {property}{sides}-{size} for xs and
-      {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl. Where
-      property is one of: m - for classes that set margin p - for classes that
-      set padding Where sides is one of: t - for classes that set margin-top or
-      padding-top b - for classes that set margin-bottom or padding-bottom l -
-      for classes that set margin-left or padding-left r - for classes that set
-      margin-right or padding-right x - for classes that set both *-left and
-      *-right y - for classes that set both *-top and *-bottom blank - for
-      classes that set a margin or padding on all 4 sides of the element Where
-      size is one of: 0 - for classes that eliminate the margin or padding by
-      setting it to 0 1 - (by default) for classes that set the margin or
-      padding to $spacer * .25 2 - (by default) for classes that set the margin
-      or padding to $spacer * .5 3 - (by default) for classes that set the
-      margin or padding to $spacer 4 - (by default) for classes that set the
-      margin or padding to $spacer * 1.5 5 - (by default) for classes that set
-      the margin or padding to $spacer * 3 auto - for classes that set the
-      margin to auto (You can add more sizes by adding entries to the $spacers
-      Sass map variable.)
+      {property}{sides}-{breakpoint}-{size} for sm, md, lg, and xl.
+    </h3>
+    <h3>
+      Where property is one of: m - for classes that set margin p - for classes
+      that set padding Where sides is one of: t - for classes that set
+      margin-top or padding-top b - for classes that set margin-bottom or
+      padding-bottom l - for classes that set margin-left or padding-left r -
+      for classes that set margin-right or padding-right x - for classes that
+      set both *-left and *-right y - for classes that set both *-top and
+      *-bottom blank - for classes that set a margin or padding on all 4 sides
+      of the element Where size is one of: 0 - for classes that eliminate the
+      margin or padding by setting it to 0 1 - (by default) for classes that set
+      the margin or padding to $spacer * .25 2 - (by default) for classes that
+      set the margin or padding to $spacer * .5 3 - (by default) for classes
+      that set the margin or padding to $spacer 4 - (by default) for classes
+      that set the margin or padding to $spacer * 1.5 5 - (by default) for
+      classes that set the margin or padding to $spacer * 3 auto - for classes
+      that set the margin to auto (You can add more sizes by adding entries to
+      the $spacers Sass map variable.)
     </h3>
     <h3>
       Examples Here are some representative examples of these classes: .mt-0 {
@@ -1145,7 +1147,41 @@
       <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
       <span class="span7 m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
     </div>
+    <h2>This is the finished styling of colt's exercise:</h2>
+    <div>
+      <style>
+        .disp {
+          background-color: red;
+          color: white;
+          display: inline;
+        }
+      </style>
+      <div class="container">
+        <h1 class="border border-success">Give me a green border</h1>
+        <h1 class="border-bottom border-danger">Give me a red bottom border</h1>
+        <h1 class="border border-warning rounded">
+          Give me a rounded yellow border
+        </h1>
+        <h4 class="disp">red bg, white text, display inline</h4>
 
+        <button class="btn-lg bg-info text-light shadow-lg p-1 rounded">
+          Large Button With Large Shadow
+        </button>
+        <div class="shadow-sm p-3 mt-5 mb-5">
+          Small shadow with padding(3) all around and margin(5) on top and
+          bottom
+        </div>
+
+        <!-- Make a large green outline button that has no padding at XS, has padding(3) at MD and has padding(5) at XL-->
+        <button class="btn bg-light border border-success p-xs-0 p-md-3 p-xl-5">
+          I GROW
+        </button>
+
+        <h2 class="text-center d-none d-sm-none d-md-block">
+          Center me, and make me hide at XS and SM
+        </h2>
+      </div>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
