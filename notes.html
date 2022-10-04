@@ -1311,7 +1311,93 @@
             <option>5</option>
           </select>
         </div>
+        <div class="form-group">
+          <label for="multi-select">Multi-Select</label>
+          <select multiple id="multi-select" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small class="text-muted"
+            >Hold down 'ctrl' on pc, or 'cmnd' on an apple/mac, to select
+            multiple
+          </small>
+        </div>
       </form>
+    </div>
+    <h2>Now we have this drop-down select in it's 'multi-select form'</h2>
+    <h2 class="m-4"></h2>
+    <h2>Let's look at text-area</h2>
+    <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="text-area">TEXT AREA</label>
+          <textarea id="text-area" class="form-control" rows="5"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="container">
+      <h2>Next we have file input</h2>
+      <div class="form-group">
+        <label for="file">File input</label>
+        <input type="file" class="form-control-file" id="" />
+      </div>
+      <h2 class="m-4">
+        If we include the input type file, we should add 'form-control-file' to
+        the end, it formats it, makes it cleaner
+      </h2>
+      <h2>
+        There are other ways to to file inputs we'll see later, but this is one
+        way to do it
+      </h2>
+    </div>
+    <div class="container mt-5">
+      <h2>The last type of input we'll go over is range input,</h2>
+      <div class="form-group">
+        <label for="formControlRange">Example of range input</label>
+        <input type="range" class="form-control-range" id="formControlRange" />
+      </div>
+    </div>
+    <div class="container">
+      <h2>
+        We can also change the size of these forms with the sizing classes:
+      </h2>
+      <input
+        class="form-control form-control-lg"
+        type="text"
+        placeholder=".form-control-lg"
+      />
+      <input class="form-control" type="text" placeholder="Default input" />
+      <input
+        class="form-control form-control-sm"
+        type="text"
+        placeholder=".form-control-sm"
+      />
+    </div>
+    <div class="container">
+      <div class="form-group">
+        <label for="formControlRange">Example of range input but small</label>
+        <input
+          type="range"
+          class="form-control-range-sm"
+          id="formControlRange"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <h2>We can also make input fields read only:</h2>
+      <div class="form-group">
+        <label for="readonlyemail">Email Address READ ONLY</label>
+        <input
+          readonly
+          type="email"
+          id="readonlyemail"
+          class="form-control"
+          placeholder="Enter your email"
+        />
+      </div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
