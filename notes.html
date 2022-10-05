@@ -11,6 +11,10 @@
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
       crossorigin="anonymous"
     />
+    <script
+      src="https://kit.fontawesome.com/225a67a784.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <h1>Colt Steel Bootstrap 4 Bootcamp</h1>
@@ -1586,6 +1590,338 @@
         id="customRange3"
       />
     </div>
+    <div class="container">
+      <h2>
+        Next we're looking at a brand new component we haven't seen yet called
+        the 'INPUT GROUP'
+      </h2>
+      <h3 class="mt-4 mb-3">
+        These are often used to add a button or add-on to a specified side of
+        input group like:
+      </h3>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">@</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Username"
+          aria-label="Username"
+          aria-describedby="basic-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Recipient's username"
+          aria-label="Recipient's username"
+          aria-describedby="basic-addon2"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+      </div>
+
+      <label for="basic-url">Your vanity URL</label>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon3"
+            >https://example.com/users/</span
+          >
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          id="basic-url"
+          aria-describedby="basic-addon3"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text">$</span>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Amount (to the nearest dollar)"
+        />
+        <div class="input-group-append">
+          <span class="input-group-text">.00</span>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">With textarea</span>
+        </div>
+        <textarea class="form-control" aria-label="With textarea"></textarea>
+      </div>
+      <h3 class="mt-5">
+        We can do this custom input group on many different inputs, custom
+        forms, custom checkbox/radios, change the size of an input group,
+        multiple add-ons, dropdowns etc..
+      </h3>
+    </div>
+    <div class="container">
+      <h2 class="mt-5 mb-5">INPUT GROUPS:</h2>
+      <h2>Let's play around with it a bit:</h2>
+      <form>
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="price" />
+        </div>
+      </form>
+    </div>
+    <div class="container mt-4">
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Amount (to the nearest dollar)"
+          />
+          <div class="input-group-append">
+            <span class="input-group-text">.00</span>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container mt-5">
+      <h2>We can do the same with buttons:</h2>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon1"
+          >
+            Button
+          </button>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          aria-label="Example text with button addon"
+          aria-describedby="button-addon1"
+        />
+      </div>
+
+      <div class="input-group mb-3">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Recipient's username"
+          aria-label="Recipient's username"
+          aria-describedby="button-addon2"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary"
+            type="button"
+            id="button-addon2"
+          >
+            Button
+          </button>
+        </div>
+      </div>
+
+      <div class="input-group mb-3">
+        <div class="input-group-prepend" id="button-addon3">
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          placeholder=""
+          aria-label="Example text with two button addons"
+          aria-describedby="button-addon3"
+        />
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Recipient's username"
+          aria-label="Recipient's username with two button addons"
+          aria-describedby="button-addon4"
+        />
+        <div class="input-group-append" id="button-addon4">
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+          <button class="btn btn-outline-secondary" type="button">
+            Button
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h2>And with button dropdowns:</h2>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with dropdown button"
+        />
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with dropdown button"
+        />
+        <div class="input-group-append">
+          <button
+            class="btn btn-outline-secondary dropdown-toggle"
+            type="button"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Dropdown
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <h2>And we can segment our buttons:</h2>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button type="button" class="btn btn-outline-secondary">
+            Action
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with segmented dropdown button"
+        />
+      </div>
+
+      <div class="input-group">
+        <input
+          type="text"
+          class="form-control"
+          aria-label="Text input with segmented dropdown button"
+        />
+        <div class="input-group-append">
+          <button type="button" class="btn btn-outline-secondary">
+            Action
+          </button>
+          <button
+            type="button"
+            class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Toggle Dropdown</span>
+          </button>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+            <div role="separator" class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Separated link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <form>
+      <h2>We can also insert custom icons from font-awesome: below is 
+        a custom key icon
+      </h2>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text">
+            <i class="fa-solid fa-key"></i>
+          </span>
+          </div>
+          <input type="password" class="form-control" placeholder="Password">
+        </form>
+ </div>
+<h3 class="mb-4 mt-4">Important to note, to center the icon, Colt moved the 
+  'i class = fa key' inside it's own span 'input-group-text', or inside 
+  it's own div, seen below
+</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="input-group">
+        <div class="input-group-prepend">
+        <div class="input-group-text">
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+      <input type="username" class="form-control" placeholder="Username">
+      </div>
+    <div class="input-group">
+      <div class="input-group-prepend">
+        <div class="input-group-text">
+          <i class="fa-solid fa-key"></i>
+        </div>
+        </div>
+        <input type="password" class="form-control" placeholder="Password">
+      
+</div>
+
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
