@@ -1352,6 +1352,11 @@
         There are other ways to to file inputs we'll see later, but this is one
         way to do it
       </h2>
+      <h2 class="m-4">Here's a custom file input:</h2>
+      <div class="custom-file">
+        <input type="file" class="custom-file-input" id="customFile" />
+        <label class="custom-file-label" for="customFile">Choose file</label>
+      </div>
     </div>
     <div class="container mt-5">
       <h2>The last type of input we'll go over is range input,</h2>
@@ -1538,6 +1543,48 @@
           >Normal radio button</label
         >
       </div>
+    </div>
+    <div class="container">
+      <h2 class="mt-4">
+        Something important Colt just mentioned is that, when he uses BOOTSTRAP,
+        he doesn't memorize all the above syntax, he said he knows some of it by
+        heart, but mostly referencing the docs when he needs something is
+        quicker and easier than trying to enter the exact correct syntax for
+        something specific in BOOTSTRAP every single time
+      </h2>
+    </div>
+    <div class="container">
+      <h2>CUSTOM RANGE INPUTS</h2>
+      <h3>
+        Similar to regular range, but we instead set the class to be
+        'custom-range', we can also set a min/max if we want, we could set a
+        'step', which essentially is the range jumping from point to point,
+        instead of sliding
+      </h3>
+      <div class="form-group">
+        <h3>Regular custom range</h3>
+        <label for="customRange1">Example range</label>
+        <input type="range" class="custom-range" id="customRange1" />
+      </div>
+      <h3>Specified min/max range:</h3>
+      <label for="customRange2">Example range</label>
+      <input
+        type="range"
+        class="custom-range"
+        min="0"
+        max="1"
+        id="customRange2"
+      />
+      <h3>SNAP range, where it goes point to point rather than sliding</h3>
+      <label for="customRange3">Example range</label>
+      <input
+        type="range"
+        class="custom-range"
+        min="0"
+        max="4"
+        step="0.5"
+        id="customRange3"
+      />
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
