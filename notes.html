@@ -1922,9 +1922,196 @@
 </div>
 
 </div>
+
+
+<div class="container">
+  <h2 class="text-center">INLINE FORMS:</h2>
+  <h3>
+    All we really need to do for inline forms, is for 
+    the form tag we add form-inline, so it would look like 
+    < form class="form-inline" >
+  </h3>
+  <form class="form-inline">
+  <div class="input-group mr-2">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+        <i class="fa-regular fa-user"></i>
+      </span>
+    </div>
+    
+    <input type="text" class="form-control" placeholder="username">
+  </div>
+  <div class="input-group mr-2">
+    <div class="input-group-prepend">
+      <span class="input-group-text">
+        <i class="fa-solid fa-key"></i>
+      </span>
+    </div>
+    
+    <input type="text" class="form-control" placeholder="password">
+  </div>
+  <input type="submit" class="btn btn-info">
+  </form>
+</div>
+<div class="container">
+  <h2 class="text-center"><u>FORMS EXERCISE</u></h2>
+</div>
+<div class="container">
+  <h1 class="text-center display-2">PART 1</h1>
+  <!-- Write your code in here-->
+  <div class="container">
+    <form>
+      <h2 class="text-bold display-6">Billing address</h2>
+      <label for="name"><b>Full Name</b></label>
+      <input
+        type="name"
+        id="name"
+        class="form-control mb-3"
+        placeholder="Full name"
+      />
+      <label for="username"><b>Username</b></label>
+      <div class="input-group-prepend">
+        <div class="input-group-text">@</div>
+      
+      <input
+        type="username"
+        id="username"
+        class="form-control"
+        placeholder="Full name"
+      />
+      </div>
+      <label for="email" class="mb-0 mt-3"><b>Email </b><label class="text-muted" for="optional"> (Optional)</label></label>
+      <input
+        type="email"
+        id="email"
+        class="form-control"
+        placeholder="you@example.com"
+      />
+      <label for="address" class="mb-0 mt-3 mb-2"><b>Address</b></label>
+      <input
+        type="address"
+        id="address"
+        class="form-control"
+        placeholder="1234 Market St. "
+      />
+      <label for="address-2" class="mb-0 mt-3"><b>Address 2 </b><label class="text-muted" for="optional"> (Optional)</label></label>
+      <input
+        type="address-2"
+        id="address-2"
+        class="form-control"
+        placeholder="Apartment or Suite"
+      />
+      <div class="form-group mt-3 mb-2">
+        <label for="FormControlTextarea1" class="mb-0"><b>Special Notes </b><label class="text-muted" for="optional"> (Optional)</label></label>
+        <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+        <small class="text-muted"
+        >Include any special requests you have for us!</small
+      >
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck2" />
+        <label class="custom-control-label" for="customCheck2"
+          ><b>Shipping address is same as billing</b></label
+        >
+      </div>
+      <div class="custom-control custom-checkbox">
+        <input type="checkbox" class="custom-control-input" id="customCheck3" />
+        <label class="custom-control-label" for="customCheck3"><b>Save my info for next time</b></label>
+      </div>
+      <hr class="my-4" />
+      <h2 class="text-bold display-6">Shipping Options</h2>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          id="customRadio5"
+          name="customRadio"
+          class="custom-control-input"
+        />
+        <label class="custom-control-label" for="customRadio5"
+          ><b>Same day</b></label
+        >
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          id="customRadio6"
+          name="customRadio"
+          class="custom-control-input"
+        />
+        <label class="custom-control-label" for="customRadio6"
+          ><b>Next day</b></label
+        >
+      </div>
+      <div class="custom-control custom-radio">
+        <input
+          type="radio"
+          id="customRadio7"
+          name="customRadio"
+          class="custom-control-input"
+        />
+        <label class="custom-control-label" for="customRadio7"
+          ><b>3 - 5 Business days</b></label
+        >
+      </div>
+      <button class="btn text-light bg-primary btn-block mt-3">
+        Continue to checkout
+      </button>
+    </form>
+  </div>
+</div>
+<h1 class="text-center display-2">PART 2</h1>
+<div class="container border rounded p-4" style="max-width: 400px">
+  <h2 class="text-center mt-0 mb-0"><b>Sign In</b></h2>
+  <label for="email4"></label>
+      <input
+        type="email4"
+        id="email4"
+        class="form-control mt-0"
+        placeholder="Email"
+      />
+      <label for="password4"></label>
+      <input
+        type="password4"
+        id="password4"
+        class="form-control mt-0"
+        placeholder="Password"
+      />
+      <div class="custom-control custom-checkbox mt-3">
+        <input type="checkbox" class="custom-control-input" id="customCheck4" />
+        <label class="custom-control-label" for="customCheck4"
+          ><b> Remember me </b>
+      </div>
+      <button class="btn btn-lg text-light bg-info btn-block mt-3">
+        Sign in
+      </button>
+      <p class="changeme text-center"><b>Not a member?<button type="button" class="btn text-info btn-link ml-0 mb-1 mr-0 p-1">
+       <b>Register</b>
+       </button></b>
+       </p>
+     </div>
+     <div class="container p-5 m-5">
+     <h2 class="mt-3 text-center">
+      So right off the bat, Colt used 'spans' instead of 'divs',
+      that's a mistake I made, I'm using 'div' when I should use 'span',
+      also Colt didn't mess around with padding or margins that much
+     </h2>
+     <h2 class="mt-3 text-center">Okay I messed up in part 2, I did NOT 
+      include a form tag at all, nor did I do a form-group, that would've 
+      saved time that I spent messing around with margin and padding, 
+      but hey, at least I got some practice in using m- / p- values... right?
+     </h2>
+     <h2 class="mt-3 text-center">
+      Also Colt used an anchor tag, not a button for the 'register'
+      input
+     </h2>
+     </div>
+     <div class="container">
+      <h2 class="text-center"><b><u>THE NAV COMPONENT</u></b></h2>
+     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      integrity="sha384-q8i/X+9emember me</b></label
+        >65DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
       crossorigin="anonymous"
     ></script>
     <script
