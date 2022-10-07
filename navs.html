@@ -131,6 +131,169 @@
             <a class="nav-link disabled" href="#">Disabled</a>
           </nav>
           </div>
+          <div class="container">
+            <p>
+                So if we inspect our nav in the browser, you'll see 
+                that display is set to flex, if we remove display:flex, 
+                the nav will default to column, and if we add it back
+                our nav goes back to row
+            </p>
+            <p>
+                In essence flexbox is a box of space, and we 
+                can control where our elements go, right now they're all 
+                at the start, but we could push them to the end of our 
+                flex container, or center them inside our flex container, spread 
+                them out
+            </p>
+            <p>
+                It's important to remeber, navs (nav class = ) are auto-set to 
+                flexbox, if we used a div or any other element, we have to 
+                specify flex with ( d-flex, d-inline-flex, d-sm-flex, d-md-flex,
+                d-lg-flex, d-xl-inline-flex etc..)
+            </p>
+            <p>
+                The docs are extemely good at illustrating how it's 
+                all set up, always reference the official bootstrap docs 
+                when needed, and keep in mind what version of 
+                bootstrap docs you're looking at, make sure is you're using 
+                bootstrap 4, that you're not looking at the Bootstrap 3 docs.
+            </p>
+            <p>
+                If we add 'flex-row-reverse' to our nav class, our 
+                entire nav will flip:
+            </p>
+          </div>
+          <nav class="nav nav-pills flex-row-reverse">
+            <a class="nav-link nav-item active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </nav>
+          </div>
+          
+          <div class="container">
+            <p>We can also turn our nav into a column:</p>
+            <nav class="nav nav-pills flex-column">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+          </div>
+          <div class="container">
+            <p>And reverse it!:</p>
+            <nav class="nav nav-pills flex-column-reverse">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+          </div>
+        <div class="container">
+            <p>
+                We can also specify that when the window reaches a certain size,
+                change our flex-row to flex-column with: nav nav-tabs flex-column flex-sm-row
+
+            </p>
+            <nav class="nav nav-tabs flex-column flex-sm-row">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              </div>
+        <div class="container">
+            <p>
+                We can also use 'justify-content' to rearrange our 
+                items inside of our container:
+            </p>
+            <p>
+                justify-content-end
+            </p>
+            <nav class="nav nav-tabs justify-content-end">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <p>
+                justify-content-center
+              </p>
+              <nav class="nav nav-tabs justify-content-center">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <p>
+                So above we used 'justify-content-end' and 'justify-content-center'
+                to rearrange where our items are inside the container
+              </p>
+              <p>
+                justify-content-around
+              </p>
+              <nav class="nav nav-tabs justify-content-around">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <p>justify-content-between</p>
+              <nav class="nav nav-tabs justify-content-between">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <p>
+                We could also say 'On mobile devices (small screens) I want 
+                our items to be justify-content-start, but if the user selects 
+                desktop view on their mobile browser, it will show the full browser 
+                display'
+              </p>
+              <nav class="nav nav-tabs justify-content-around justify-content-md-center">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <nav class="nav nav-tabs flex-column flex-md-row">
+                <a class="nav-link nav-item active" href="#">Active</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link disabled" href="#">Disabled</a>
+              </nav>
+              <p>
+                So with the above nav nav-tabs flex-column flex-md-row,
+                we set it so that when the user is on mobile, our 
+                content will display in a column, but if they're screen 
+                size is a tablet or desktop size, it becomes a row
+              </p>
+              <p>We can also use 'flex-fill' to fill all available 
+                space inside our items:
+              </p>
+              <nav class="nav nav-tabs flex-column flex-md-row">
+                <a class="nav-link nav-item active flex-fill" href="#">Active</a>
+                <a class="nav-link flex-fill" href="#">Link</a>
+                <a class="nav-link flex-fill" href="#">Link</a>
+                <a class="nav-link flex-fill disabled" href="#">Disabled</a>
+              </nav>
+              <p>The above is utilizing 'flex-fill'</p>
+              <nav class="nav nav-pills nav-justified">
+                <a class="nav-item nav-link active" href="#">Active</a>
+                <a class="nav-item nav-link" href="#">Link</a>
+                <a class="nav-item nav-link" href="#">Link</a>
+                <a class="nav-item nav-link disabled" href="#">Disabled</a>
+              </nav>
+          </div>
+          <p>Outside of a container div:</p>
+          <nav class="nav nav-pills nav-justified">
+            <a class="nav-item nav-link active" href="#">Active</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+            <a class="nav-item nav-link" href="#">Link</a>
+            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+          </nav>
+    
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
