@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap navbar demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: lightskyblue;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1 class="text-center"><u>NAVBAR DEMO</u></h1>
+    </div>
+    <nav class="navbar navbar-light bg-light">
+      <a href="" class="navbar-brand">website logo</a>
+    </nav>
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="" class="navbar-brand">website logo</a>
+    </nav>
+    <!-- As a link -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+    </nav>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-light bg-light">
+      <span class="navbar-brand mb-0 h1">Navbar</span>
+    </nav>
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
+          width="30"
+          height="30"
+          class="d-inline-block align-top"
+          alt=""
+        />
+        Coffee
+      </a>
+    </nav>
+    <h2>
+      Adding a navbar that has a collapsing, responsive design with links:
+    </h2>
+    <div class="container">
+      <nav class="navbar navbar-dark bg-dark">
+        <a href="" class="navbar-brand">Always collapsed</a>
+        <button
+          class="navbar-toggler"
+          data-toggle="collapse"
+          data-target="#myNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="myNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link disabled">Contact</a>
+                </li>
+        </div>
+      </nav>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Expand at small</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav2"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav2">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+            </div>
+          </nav>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Expand at large</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav3"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav3">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+            </div>
+          </nav>
+    </div>
+    <h2 class="text-center mt-3 mb-2"><u>PART TWO OF NAVBAR DEMO</u></h2>
+    <div class="container mt-3 mb-3">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Expand at small</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav4"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav4">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                <button class="btn btn-outline-light">Download</button>
+            </div>
+
+          </nav>
+    </div>
+    <p class="h3">Important to note, if we want our download button 
+        separate from the rest of our navbar items, we need to 
+        add 'justify-content-between' to the div class with our 
+        items, note though, that our button is outside of our 
+        ul/li but still inside our collapse div! If we added that 
+        justify-content-between elsewhere, our button would not 
+        separate from the group!
+    </p>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Expand at small</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav5"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="myNav5">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                <button class="btn btn-outline-light">Download</button>
+            </div>
+
+          </nav>
+    </div>
+    <p class="h3">
+        We can also use 'margin-left: auto' or 'ml-auto' on the 
+        button class in our case to do the same thing, ml-auto:
+    </p>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Expand at small</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav6"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav6">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                <button class="btn btn-outline-light ml-auto">Download</button>
+            </div>
+
+          </nav>
+    </div>
+    <p class="h3">We can also do this with forms:</p>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="" class="navbar-brand">With form!</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav7"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav7">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                    <form action="" class="form-inline ml-auto">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success ml-1">Search</button>
+                    </form>
+            </div>
+
+          </nav>
+    </div>
+    <div class="container mt-3">
+    <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand">Navbar</a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-light" style="background-color: #12310a;">
+            
+            <form class="form-inline ml-auto">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+            </form>
+          </nav>
+    </div>
+    <div class="container mt-3">
+<p class="h3">
+Okay next section on NAVBARS, positioning our NAVBARS
+</p>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Default placement</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav8"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav8">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                    <form action="" class="form-inline ml-auto">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success ml-1">Search</button>
+                    </form>
+            </div>
+
+          </nav>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar  fixed-top navbar-expand-md navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Fixed top</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav9"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav9">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                    <form action="" class="form-inline ml-auto">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success ml-1">Search</button>
+                    </form>
+            </div>
+
+          </nav>
+    </div>
+    <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ut, minus, ipsa earum magnam at quidem modi quaerat nulla a et, obcaecati provident cupiditate consectetur quasi cumque harum aut iste?
+        Explicabo reiciendis quaerat nesciunt rerum repellat necessitatibus aperiam voluptatum nam impedit nobis sed dolores vel, est corporis culpa ab mollitia magni quod iure reprehenderit ipsa consequatur officiis perspiciatis voluptas. Recusandae.
+        Placeat, quas, deserunt id voluptatum odit illo nam laborum cumque ducimus, corrupti nisi doloremque rerum animi itaque rem possimus. Quas cupiditate eligendi nulla culpa vitae et iste iusto esse odit.
+        Minus accusantium eius libero quod, nam deserunt doloremque tempore quis cum quaerat consequuntur? Quod labore atque assumenda corporis necessitatibus aliquam, dolorem unde alias sapiente fuga modi ducimus repellat sunt dicta!
+        Placeat suscipit vel odit architecto nihil culpa labore esse, facilis non. Harum, vitae fugiat? Nobis voluptatem iste quidem atque eligendi? Nihil cupiditate nesciunt tempore odit? Modi consequuntur provident reprehenderit adipisci!
+        Provident optio obcaecati at numquam culpa iure, laboriosam eligendi cum! Alias quae tempora doloremque sunt ad voluptatem, a quod excepturi sint nam qui soluta laboriosam ducimus quibusdam dolorum fugit rem.
+        Accusantium, doloribus? Ipsum rerum eveniet inventore itaque expedita quibusdam tempore, neque at est aliquam perspiciatis temporibus libero dolore ducimus quo! Odio maiores cum excepturi autem? Corporis aliquid excepturi voluptatibus recusandae!
+        Sapiente odit unde necessitatibus natus tenetur culpa ratione obcaecati dolor placeat rerum repellat fugit nam, sunt excepturi numquam deserunt eius asperiores, expedita quam hic, ex inventore. Minima corporis quia impedit.
+        Ea minima iusto veniam? Eos, assumenda corrupti voluptates magnam asperiores doloribus ullam at ratione quibusdam? Quos voluptatibus voluptas maxime velit beatae ullam sunt vel ducimus. Veniam molestias qui dolorum sapiente?
+        Quaerat corrupti dolorem sed placeat magni magnam obcaecati eum cupiditate saepe omnis. Quis ullam cumque dignissimos atque perspiciatis inventore earum consequuntur est? Vel voluptate fuga maxime, ea ipsa doloremque deserunt?</p>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Fixed bottom</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav10"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav10">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                    <form action="" class="form-inline ml-auto">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success ml-1">Search</button>
+                    </form>
+            </div>
+
+          </nav>
+    </div>
+    <div class="container mt-3">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <a href="" class="navbar-brand">Default placement</a>
+            <button
+              class="navbar-toggler"
+              data-toggle="collapse"
+              data-target="#myNav11"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="myNav11">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contact</a>
+                    </li>
+                    </ul>
+                    <form action="" class="form-inline ml-auto">
+                        <input type="text" class="form-control">
+                        <button class="btn btn-success ml-1">Search</button>
+                    </form>
+            </div>
+
+          </nav>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
