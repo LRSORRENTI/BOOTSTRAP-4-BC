@@ -2198,6 +2198,216 @@ we can make them responsive!
     Okay demo is done, on to the exercise!
   </p>
 </div>
+<div class="container">
+  <p>
+    Okay the exercise was.. okay, I had to reference bootstrap docs 
+    a lot, and at the end I took a peek at Colt's solution, was 
+    having some difficulties replicating the example page precisely.
+  </p>
+</div>
+<div class="container">
+  <h2>
+    BOOTSTRAP GRID BASICS:
+  </h2>
+  <h3>
+    INTRO TO THE GRID SYSTEM
+  </h3>
+  <p>
+    The GRID system is possibly the most commonly used tool 
+    in BOOTSTRAP, but on it's own there's nothing to see, 
+    it's not a component like a navbar or a button, it's more 
+    of an underlying structure behind the scenes, that helps 
+    layout webpages
+  </p>
+  <p>
+    The grid system is responsive, so at certain sizes the available 
+    cards/content will shift to match the specified breakpoints
+  </p>
+  <p><b>
+    AN IMPORTANT THING TO NOTE IS THAT 'CONTAINERS' ARE REQUIRED 
+    WHEN USING THE GRID SYSTEM
+  </b></p>
+  <p>
+    If we want our content to go horizontally across our 
+    container, we use row, then within that row, we divide it 
+    using column, column classes 'col-sm' or 'col-md'
+  </p>
+</div>
+<div class="container">
+  <div class="row border" style="height: 100px">
+    <div class="col bg-success">
+      First column
+    </div>
+    <div class="col bg-info">
+      Second Column
+    </div>
+  </div>
+  <div class="row" style="height: 100px;">
+    <div class="col bg-danger">
+      1 of 3
+    </div>
+    <div class="col bg-warning">
+      2 of 3
+    </div>
+    <div class="col bg-primary">
+      3 of 3
+    </div>
+  </div>
+</div>
+<div class="container">
+  <p>
+    The above example is showing how to make equal width columnns, 
+    which sometimes you do want
+  </p>
+</div>
+<div class="container">
+  <p>
+    But we need to go over how we can un-evenly distribute space, 
+    if we want a main card taking up 75% and a side-bar taking up 
+    the remaining 25% of a given container
+  </p>
+  <p style="font-size: 40px;">
+     Keep in mind ONE ROW = 12 UNITS OF SPACE
+  </p>
+</div>
+<div class="container">
+  <p>
+    If we want to specify a certain column to take up more units than, 
+    the rest inside of it's container we use: 'col-5' or 'col-num' 
+    whichever num we specify
+  </p>
+</div>
+<div class="container">
+  <h2>CUSTOM UNIT SIZES</h2>
+  <div class="container">
+    <div class="row border" style="height: 100px">
+      <div class="col-8 bg-success">
+        8 units of space
+      </div>
+      <div class="col-4 bg-info">
+        4 untis of space
+      </div>
+    </div>
+    <div class="row" style="height: 100px;">
+      <div class="col-3 bg-danger">
+        3 units of space 
+      </div>
+      <div class="col-8 bg-warning">
+        8 units of space
+      </div>
+      <div class="col-1 bg-primary">
+        1 unit of space 
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h3>DEMO WITH TEXT</h3>
+  <div class="row">
+    <div class="col-9">
+      <p>
+        Lorem ipsum dolor sit
+         amet consectetur adipisicing elit. Quae, ratione.
+         AND KEEP IN MIND WITHOUT THE GRID SYSTEM THIS 
+         PARAGRAPH WOULD GO ALL THE WAY ACROSS
+      </p>
+    </div>
+    <div class="col-3">
+      <div class="nav flex-column">
+        <a href="" class="nav-link">HOME</a>
+        <a href="" class="nav-link">ABOUT</a>
+        <a href="" class="nav-link">CONTACT</a>
+        <a href="" class="nav-link">SIGN OUT</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <h2>
+    THE RESPONSIVE GRID
+  </h2>
+  <p>
+    For resposive grid design we use the same terminology, 
+    xs, sm, md, lg, xl etc.. that we saw in some of 
+    the other bootstrap utilities
+  </p>
+  <p>
+    So if we sepcify col-sm-6, at the small breakpoint 
+    the column should take up 6 units, let's demo this
+  </p>
+</div>
+<div class="container">
+  <h3>
+    RESPONSIVE GRID LAYOUTS:
+  </h3>
+  <p>
+    Also we could utilize 'fluid containers' 'container-fluid', we've only 
+    been using regular container divs so far in GRID
+  </p>
+  <div class="row border" style="height: 200px">
+    <div class="col-3 bg-info"></div>
+    <div class="col-6 bg-success"></div>
+    <div class="col-3 bg-warning"></div>
+  </div>
+  <p>Now let's say we want the green middle column 'col-6'
+    to grow at XL, to do this we add 'col-3 bg-info col-xl-2', 
+    'col-3 bg-warning col-xl-2', and finally add 'col-6 bg-success 
+    col-xl-8', now our middle column will grow to 8 units in 
+    our container and our other two columns will make up the difference 
+    adding to 12 (col-xl-2 each) at the xtra-large screen size
+  </p>
+</div>
+<div class="container" style="height: 200px">
+  <div class="row border" style="height: 200px">
+    <div class="col-3 col-xl-2 bg-info">col-3 col-xl-2</div>
+    <div class="col-6 col-xl-8 bg-success">col-6 col-xl-8</div>
+    <div class="col-3 col-xl-2 bg-warning">col-3 col-xl-2</div>
+  </div>
+</div>
+<div class="container" style="height: 200px">
+  <div class="row border" style="height: 200px">
+    <div class="col-4 col-md-5 bg-info">col-4 col-md-5</div>
+    <div class="col-6 col-md-3 bg-success">col-6 col-md-3</div>
+    <div class="col-2 col-md-4 bg-warning">col-2 col-md-4</div>
+  </div>
+</div>
+<div class="container" style="height: 200px">
+  <p>Usually though, you'd want things to change once a screen 
+    size shrinks to a certain size, remember there's no such thing 
+    as col-xs-2,  the default is xs, so we give the col-sm-value 
+    or col-sm-4, then the default is xs, then once it reaches small 
+    screen size change
+  </p>
+  <div class="row border" style="height: 400px">
+    <div class="col-sm-4 bg-info"> col-sm-4</div>
+    <div class="col-sm-4 bg-success"> col-sm-4</div>
+    <div class="col-sm-4 bg-warning"> col-sm-4</div>
+  </div>
+  <h2>DEMO</h2>
+  <div class="row">
+    <div class="col-md-9 bg-secondary text-info">
+      <h3>BLOG POST</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sapiente, impedit est nobis voluptatem tempore ad qui accusantium aut incidunt nulla iusto dolores repellat expedita quis molestias voluptatum consequatur ipsa!
+        Magni mollitia libero ut doloremque assumenda, natus porro, esse quod labore quidem molestiae deserunt. Pariatur tempora praesentium voluptate laborum ullam atque placeat, modi ipsa at consectetur autem, perspiciatis quod tenetur.
+        Ullam aspernatur vero, volupte? Sapiente, minus molestias. Magni quam nisi saepe nobis ad distinciores, accusamus  delectus! In magni excepturi earum, libero aliquam quas aliquid nisi dolore atque nobis.
+      </p>
+    </div>
+    <div class="col-md-3 bg-dark text-light">
+<div class="nav">
+  <div class="nav-link">AUGUST 2022</div>
+  <div class="nav-link">SEPTEMBER 2022</div>
+  <div class="nav-link">OCTOBER 2022</div>
+  <div class="nav-link">NOVEMBER 2022</div>
+  <div class="nav-link">DECEMBER 2022</div>
+  <div class="nav-link">JANUARY 2023</div>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+9emember me</b></label
