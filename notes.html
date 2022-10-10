@@ -2327,9 +2327,92 @@ we can make them responsive!
     THE RESPONSIVE GRID
   </h2>
   <p>
-    
+    For resposive grid design we use the same terminology, 
+    xs, sm, md, lg, xl etc.. that we saw in some of 
+    the other bootstrap utilities
+  </p>
+  <p>
+    So if we sepcify col-sm-6, at the small breakpoint 
+    the column should take up 6 units, let's demo this
   </p>
 </div>
+<div class="container">
+  <h3>
+    RESPONSIVE GRID LAYOUTS:
+  </h3>
+  <p>
+    Also we could utilize 'fluid containers' 'container-fluid', we've only 
+    been using regular container divs so far in GRID
+  </p>
+  <div class="row border" style="height: 200px">
+    <div class="col-3 bg-info"></div>
+    <div class="col-6 bg-success"></div>
+    <div class="col-3 bg-warning"></div>
+  </div>
+  <p>Now let's say we want the green middle column 'col-6'
+    to grow at XL, to do this we add 'col-3 bg-info col-xl-2', 
+    'col-3 bg-warning col-xl-2', and finally add 'col-6 bg-success 
+    col-xl-8', now our middle column will grow to 8 units in 
+    our container and our other two columns will make up the difference 
+    adding to 12 (col-xl-2 each) at the xtra-large screen size
+  </p>
+</div>
+<div class="container" style="height: 200px">
+  <div class="row border" style="height: 200px">
+    <div class="col-3 col-xl-2 bg-info">col-3 col-xl-2</div>
+    <div class="col-6 col-xl-8 bg-success">col-6 col-xl-8</div>
+    <div class="col-3 col-xl-2 bg-warning">col-3 col-xl-2</div>
+  </div>
+</div>
+<div class="container" style="height: 200px">
+  <div class="row border" style="height: 200px">
+    <div class="col-4 col-md-5 bg-info">col-4 col-md-5</div>
+    <div class="col-6 col-md-3 bg-success">col-6 col-md-3</div>
+    <div class="col-2 col-md-4 bg-warning">col-2 col-md-4</div>
+  </div>
+</div>
+<div class="container" style="height: 200px">
+  <p>Usually though, you'd want things to change once a screen 
+    size shrinks to a certain size, remember there's no such thing 
+    as col-xs-2,  the default is xs, so we give the col-sm-value 
+    or col-sm-4, then the default is xs, then once it reaches small 
+    screen size change
+  </p>
+  <div class="row border" style="height: 200px">
+    <div class="col-sm-4 bg-info"> col-sm-4</div>
+    <div class="col-sm-4 bg-success"> col-sm-4</div>
+    <div class="col-sm-4 bg-warning"> col-sm-4</div>
+  </div>
+  <h2>DEMO</h2>
+  <div class="row">
+    <div class="col-md-9 bg-secondary text-info">
+      <h3>BLOG POST</h3>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat sapiente, impedit est nobis voluptatem tempore ad qui accusantium aut incidunt nulla iusto dolores repellat expedita quis molestias voluptatum consequatur ipsa!
+        Magni mollitia libero ut doloremque assumenda, natus porro, esse quod labore quidem molestiae deserunt. Pariatur tempora praesentium voluptate laborum ullam atque placeat, modi ipsa at consectetur autem, perspiciatis quod tenetur.
+        Ullam aspernatur vero, volupte? Sapiente, minus molestias. Magni quam nisi saepe nobis ad distinciores, accusamus  delectus! In magni excepturi earum, libero aliquam quas aliquid nisi dolore atque nobis.
+      </p>
+    </div>
+    <div class="col-md-3 bg-dark text-light">
+<div class="nav">
+  <div class="nav-link">AUGUST 2022</div>
+  <div class="nav-link">SEPTEMBER 2022</div>
+  <div class="nav-link">OCTOBER 2022</div>
+  <div class="nav-link">NOVEMBER 2022</div>
+  <div class="nav-link">DECEMBER 2022</div>
+  <div class="nav-link">JANUARY 2023</div>
+</div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <p>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt officiis quia labore obcaecati iusto earum non error ex. Numquam, vero et doloremque quidem soluta totam doloribus reiciendis iure aut quis.
+  </p>
+</div>
+
+
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+9emember me</b></label
