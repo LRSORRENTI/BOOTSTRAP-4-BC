@@ -479,7 +479,199 @@
       further, remember every time we create a new row we have 12 units to work
       with,
     </p>
-
+    <h2>
+      <u>FORMS AND THE GRID</u>
+    </h2>
+    <p class="h3">
+      More complex forms can be built using our grid classes. Use these for form
+      layouts that require multiple columns, varied widths, and additional
+      alignment options.
+    </p>
+    <h2>Let's demo this:</h2>
+    <div class="container">
+      <h2 class="display-3">FORM GRID</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-2">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3 text-center">
+      Now the above doesn't look very nice on mobile / small screens, so let's
+      fix it!
+    </p>
+    <div class="container">
+      <h2 class="display-3">FORM GRID (MOBILE)</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col-md">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-1-md">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col-md">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3 text-center">Now let's add an address field</p>
+    <div class="container">
+      <h2 class="display-3">FORM GRID (MOBILE)</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col-md">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-1-md">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col-md">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="">ADDRESS</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="123 Main St."
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3">Now let's mess with it some more!</p>
+    <div class="container-fluid">
+      <h2 class="display-3">NESTED FORM GRID</h2>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <form action="">
+            <div class="form-row">
+              <div class="col-md">
+                <label for="">First name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="first name"
+                />
+              </div>
+              <div class="col-1-md">
+                <label for="">M.</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="Middle initial"
+                />
+              </div>
+              <div class="col-md">
+                <label for="">Last name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="last name"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="">ADDRESS</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="123 Main St."
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h2>GRID EXERCISE</h2>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
