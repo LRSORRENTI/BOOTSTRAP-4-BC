@@ -350,10 +350,136 @@
       Often we have content that won't go all the way across our row, and we may
       want to responsively offset it by a certain number of units
     </h3>
-    <p>
+    <p class="h4">
       So if we want to change items that are inside our container we can use
       these 'offset classes'
     </p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">
+      Let's say we want it to start further in, we can add offset-1
+    </p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-1 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">offset-3:</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-3 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">offset-3 , offset-2::</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-1 border">
+          <h3>COL-4 offset-1</h3>
+        </div>
+        <div class="col-4 offset-2 border">
+          <h3>COL-4 offset-2</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">
+      We can also add responsiveness with: 'col-4 offset-md-1 border' this will
+      change the display of our col once it reaches the medium size window
+    </p>
+    <p class="h4">col-4 offset-md-1 border:</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-md-1 border">
+          <h3>COL-4 offset-md-1</h3>
+        </div>
+        <div class="col-4 offset-md-2 border">
+          <h3>COL-4 offset-md-2</h3>
+        </div>
+      </div>
+    </div>
+    <h2>GRID NESTING:</h2>
+    <p class="h3">
+      We can also 'nest' our grids, this is useful if we have a page that we
+      want to divide with grid, then sub-divide even further, and all we need to
+      do is inside of a column, make another row, that's it
+    </p>
+    <h3 class="text-center">
+      NESTED GRID: also note, this container goes all the way across because we
+      added 'div class="container-fluid"'
+    </h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">RIGHT</div>
+      </div>
+    </div>
+    <p class="h3 text-center">NESTED</p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-4 border">NESTED ONE</div>
+            <div class="col-4 border">NESTED TWO</div>
+            <div class="col-4 border">NESTED THREE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h3">
+      We could also make our nested col-4's stack at a specified size with
+      'col-sm-4'
+    </p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-sm-4 border">NESTED ONE</div>
+            <div class="col-sm-4 border">NESTED TWO</div>
+            <div class="col-sm-4 border">NESTED THREE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h3">
+      If we want to get fancy, we can divide our containers even further!
+    </p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-4 border">NESTED ONE</div>
+            <div class="col-4 border">NESTED TWO</div>
+            <div class="col-4 border">
+              NESTED THREE
+              <div class="row">
+                <div class="col-lg-3 border border-info">col-sm-3</div>
+                <div class="col-lg-9 border border-danger">col-sm-9</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h2">
+      That's nesting, it's very useful, it's about sub-dividing the space
+      further, remember every time we create a new row we have 12 units to work
+      with,
+    </p>
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
