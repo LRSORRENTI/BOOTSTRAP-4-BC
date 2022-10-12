@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-dark text-info">
+    <div class="container text-center">
+      <h2><u>GRID ALIGNMENT</u></h2>
+      <h3></h3>
+    </div>
+    <div class="container">
+      <h2>GRID ALIGNMENT EXAMPLE</h2>
+      <div class="row border" style="height: 400px">
+        <div class="col border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            dolores, autem vitae, eos ipsam error facere est voluptate maiores
+            veniam assumenda? Cum quia amet eligendi. Aperiam facilis veniam
+            officia quod debitis adipisci similique consequatur tempora velit
+            ipsum, dolores, magnam perspiciatis?
+          </p>
+        </div>
+      </div>
+      <h3>
+        So if we wanted to play with the available space inside our container we
+        can use the 'align-items property', so if we add 'align-items-start' our
+        content will align to the top of the container:
+      </h3>
+    </div>
+    <div class="container">
+      <div class="row border align-items-start" style="height: 400px">
+        <div class="col border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            dolores, autem vitae, eos ipsam error facere est voluptate maiores
+            veniam assumenda? Cum quia amet eligendi. Aperiam facilis veniam
+            officia quod debitis adipisci similique consequatur tempora velit
+            ipsum, dolores, magnam perspiciatis?
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3 class="text-center">Align-items-end:</h3>
+    <div class="container">
+      <div class="row border align-items-end" style="height: 400px">
+        <div class="col border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            dolores, autem vitae, eos ipsam error facere est voluptate maiores
+            veniam assumenda? Cum quia amet eligendi. Aperiam facilis veniam
+            officia quod debitis adipisci similique consequatur tempora velit
+            ipsum, dolores, magnam perspiciatis?
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>Or we can do align-items-center:</h3>
+    <div class="container">
+      <div class="row border align-items-center" style="height: 400px">
+        <div class="col border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col border">
+          <h3>Thing 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            dolores, autem vitae, eos ipsam error facere est voluptate maiores
+            veniam assumenda? Cum quia amet eligendi. Aperiam facilis veniam
+            officia quod debitis adipisci similique consequatur tempora velit
+            ipsum, dolores, magnam perspiciatis?
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>
+      We can also individually move things around inside of our container with
+      'col-4 align-self-start' , 'col-3 align-self-center', 'col-5
+      align-self-end'
+    </h3>
+    <div class="container">
+      <div class="row border" style="height: 400px">
+        <div class="col-4 border align-self-start">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-3 border align-self-end">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col-5 border align-self-center">
+          <h3>Thing 3</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae,
+            dolores, autem vitae, eos ipsam error facere est voluptate maiores
+            veniam assumenda? Cum quia amet eligendi. Aperiam facilis veniam
+            officia quod debitis adipisci similique consequatur tempora velit
+            ipsum, dolores, magnam perspiciatis?
+          </p>
+        </div>
+      </div>
+    </div>
+    <h2 class="text-center">HORIZONTAL ALIGNMENT</h2>
+    <p>
+      If we have excess space in our container, we can use justify-content to
+      shift things around
+    </p>
+    <h3>JUSTIFY-CONTENT: 'row border justify-content-end':</h3>
+    <div class="container">
+      <div class="row border justify-content-end" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>JUSTIFY-CONTENT: 'row border justify-content-center':</h3>
+    <div class="container">
+      <div class="row border justify-content-center" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>JUSTIFY-CONTENT: 'row border justify-content-between':</h3>
+    <div class="container">
+      <div class="row border justify-content-between" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>JUSTIFY-CONTENT: 'row border justify-content-around':</h3>
+    <div class="container">
+      <div class="row border justify-content-around" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+      </div>
+    </div>
+    <h3>Let's add one more column in</h3>
+    <h3>
+      JUSTIFY-CONTENT: 'row border justify-content-around' with one extra
+      column:
+    </h3>
+    <div class="container">
+      <div class="row border justify-content-around" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col-3 border">
+          <h3>Thing 3</h3>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <h3>'row border justify-content-between':</h3>
+    <div class="container">
+      <div class="row border justify-content-between" style="height: 400px">
+        <div class="col-4 border">
+          <h3>Thing 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border">
+          <h3>Thing 2</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col-3 border">
+          <h3>Thing 3</h3>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <h3>
+      We can also add the align-items property to align them inside the
+      container:
+    </h3>
+    <div class="container">
+      <div class="row border justify-content-between" style="height: 400px">
+        <div class="col-4 border align-self-center">
+          <h3>Thing 1 'align-self-center'</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio rerum
+            quam eaque hic provident necessitatibus dicta modi beatae soluta
+            veritatis.
+          </p>
+        </div>
+        <div class="col-4 border align-self-end">
+          <h3>Thing 2 'align-self-end</h3>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Praesentium, sit in blanditiis non eveniet eius.
+          </p>
+        </div>
+        <div class="col-3 border align-self-start">
+          <h3>Thing 3 'align-self-start'</h3>
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div>
+    </div>
+    <h3>
+      So if we want to align all the items together we use: 'align-items', and
+      if we want to align individual items we use: 'align-self', and if we want
+      to move things horizonatally: 'justify-content', that's grid alignment,
+      there's many ways to configure a grid, remember the Bootstrap DOCS, are a
+      great reference!
+    </h3>
+    <h2 class="text-center">THE GRID: NESTING AND OFFSET</h2>
+    <h3>
+      Often we have content that won't go all the way across our row, and we may
+      want to responsively offset it by a certain number of units
+    </h3>
+    <p class="h4">
+      So if we want to change items that are inside our container we can use
+      these 'offset classes'
+    </p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">
+      Let's say we want it to start further in, we can add offset-1
+    </p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-1 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">offset-3:</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-3 border">
+          <h3>COL-4</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">offset-3 , offset-2::</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-1 border">
+          <h3>COL-4 offset-1</h3>
+        </div>
+        <div class="col-4 offset-2 border">
+          <h3>COL-4 offset-2</h3>
+        </div>
+      </div>
+    </div>
+    <p class="h4">
+      We can also add responsiveness with: 'col-4 offset-md-1 border' this will
+      change the display of our col once it reaches the medium size window
+    </p>
+    <p class="h4">col-4 offset-md-1 border:</p>
+    <div class="container">
+      <div class="row border">
+        <div class="col-4 offset-md-1 border">
+          <h3>COL-4 offset-md-1</h3>
+        </div>
+        <div class="col-4 offset-md-2 border">
+          <h3>COL-4 offset-md-2</h3>
+        </div>
+      </div>
+    </div>
+    <h2>GRID NESTING:</h2>
+    <p class="h3">
+      We can also 'nest' our grids, this is useful if we have a page that we
+      want to divide with grid, then sub-divide even further, and all we need to
+      do is inside of a column, make another row, that's it
+    </p>
+    <h3 class="text-center">
+      NESTED GRID: also note, this container goes all the way across because we
+      added 'div class="container-fluid"'
+    </h3>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">RIGHT</div>
+      </div>
+    </div>
+    <p class="h3 text-center">NESTED</p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-4 border">NESTED ONE</div>
+            <div class="col-4 border">NESTED TWO</div>
+            <div class="col-4 border">NESTED THREE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h3">
+      We could also make our nested col-4's stack at a specified size with
+      'col-sm-4'
+    </p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-sm-4 border">NESTED ONE</div>
+            <div class="col-sm-4 border">NESTED TWO</div>
+            <div class="col-sm-4 border">NESTED THREE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h3">
+      If we want to get fancy, we can divide our containers even further!
+    </p>
+    <div class="container-fluid">
+      <div class="row border">
+        <div class="col-sm border">LEFT</div>
+        <div class="col-sm border">
+          RIGHT
+          <div class="row border border-success">
+            <div class="col-4 border">NESTED ONE</div>
+            <div class="col-4 border">NESTED TWO</div>
+            <div class="col-4 border">
+              NESTED THREE
+              <div class="row">
+                <div class="col-lg-3 border border-info">col-sm-3</div>
+                <div class="col-lg-9 border border-danger">col-sm-9</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="h2">
+      That's nesting, it's very useful, it's about sub-dividing the space
+      further, remember every time we create a new row we have 12 units to work
+      with,
+    </p>
+    <h2>
+      <u>FORMS AND THE GRID</u>
+    </h2>
+    <p class="h3">
+      More complex forms can be built using our grid classes. Use these for form
+      layouts that require multiple columns, varied widths, and additional
+      alignment options.
+    </p>
+    <h2>Let's demo this:</h2>
+    <div class="container">
+      <h2 class="display-3">FORM GRID</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-2">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3 text-center">
+      Now the above doesn't look very nice on mobile / small screens, so let's
+      fix it!
+    </p>
+    <div class="container">
+      <h2 class="display-3">FORM GRID (MOBILE)</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col-md">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-1-md">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col-md">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3 text-center">Now let's add an address field</p>
+    <div class="container">
+      <h2 class="display-3">FORM GRID (MOBILE)</h2>
+      <form action="">
+        <div class="form-row">
+          <div class="col-md">
+            <label for="">First name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="first name"
+            />
+          </div>
+          <div class="col-1-md">
+            <label for="">M.</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="Middle initial"
+            />
+          </div>
+          <div class="col-md">
+            <label for="">Last name</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="last name"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <label for="">ADDRESS</label>
+            <input
+              type="text"
+              name=""
+              id=""
+              class="form-control"
+              placeholder="123 Main St."
+            />
+          </div>
+        </div>
+      </form>
+    </div>
+    <p class="h3">Now let's mess with it some more!</p>
+    <div class="container-fluid">
+      <h2 class="display-3">NESTED FORM GRID</h2>
+      <div class="row">
+        <div class="col"></div>
+        <div class="col">
+          <form action="">
+            <div class="form-row">
+              <div class="col-md">
+                <label for="">First name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="first name"
+                />
+              </div>
+              <div class="col-1-md">
+                <label for="">M.</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="Middle initial"
+                />
+              </div>
+              <div class="col-md">
+                <label for="">Last name</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="last name"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col">
+                <label for="">ADDRESS</label>
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="123 Main St."
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <h2>GRID EXERCISE</h2>
+    <h1 class="text-center display-3">Grid Exercise</h1>
+    <h4 class="text-center">Part 1</h4>
+    <div class="container justify-content-center">
+      <div class="row">
+        <div class="text-white bg-danger col">Share space in row evenly</div>
+        <div class="text-white bg-warning col">Share space in row evenly</div>
+        <div class="text-white bg-success col">Share space in row evenly</div>
+      </div>
+    </div>
+
+    <h4 class="text-center">Part 2</h4>
+    <div class="container">
+      <div class="row">
+        <div class="text-white bg-info col-sm-6">
+          100% on xs, 50% on small and above
+        </div>
+        <div class="text-white bg-warning col-sm-6">
+          100% on xs, 50% on small and above
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text-center">Part 3</h4>
+    <div class="container">
+      <div class="row">
+        <div class="text-white bg-success col-6 col-md-3">
+          50% on xs, 25% on medium and above
+        </div>
+        <div class="text-white bg-primary col-6 col-md-9">
+          50% on xs, 75% on medium and above
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text-center">Part 4</h4>
+    <div class="container">
+      <div class="row">
+        <div class="text-white bg-danger col-12">
+          I ALWAYS GO ALL THE WAY ACROSS
+        </div>
+        <div class="text-white bg-info col-md-2">2/12 on md and above</div>
+        <div class="text-white bg-success col-md-8">8/12 on md and above</div>
+        <div class="text-white bg-info col-md-2">2/12 on md and above</div>
+        <div class="text-white bg-danger col-12">
+          I ALWAYS GO ALL THE WAY ACROSS
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text-center">Part 5</h4>
+    <div class="container">
+      <div class="bg-warning text-white row-4 offset-6">
+        Always 50% of row, offset by 50%
+      </div>
+    </div>
+    <p class="h3">
+      Okay so the above, PART 5, I didn't do correctly, I was supposed to put
+      the div inside of a row div, then add 'bg-warning col-6 offset-6', what I
+      put is: 'bg-warning text-white row-4 offset-6'
+    </p>
+    <h4 class="text-center">Part 6</h4>
+    <div class="container">
+      <div class="row">
+        <div class="bg-primary text-white col-md-3">
+          100% on xs. md and above: 25%
+        </div>
+        <div class="bg-info text-white col-md-3 offset-md-6">
+          100% on xs. md and above: 25% and offset by 50%
+        </div>
+      </div>
+    </div>
+
+    <h4 class="text-center">Part 7</h4>
+    <div class="container">
+      <div class="row">
+        <div class="bg-danger text-white col-md-9">
+          100% on xs. Md and above: 75%
+        </div>
+        <div class="bg-success text-white d-none d-md-block col-md-3">
+          Hidden on xs and sm. 25% on md and above
+        </div>
+      </div>
+    </div>
+    <h2 class="mt-5 text-center">
+      <u>LIST GROUPS</u>
+    </h2>
+    <div class="container h3">
+      <p>
+        This next section is mainly about a component called 'card', but first
+        we need to go over 'list groups', often we'll put list groups inside of
+        cards, and we'll see that coming up
+      </p>
+      <p>
+        'List Groups' are ways of displaying series of content, and they look
+        like this:
+      </p>
+      <ul class="list-group">
+        <li class="list-group-item">First list group item</li>
+        <li class="list-group-item">Second list group item</li>
+        <li class="list-group-item">Third list group item</li>
+        <li class="list-group-item">Fourth list group item</li>
+        <li class="list-group-item">Fifth list group item</li>
+      </ul>
+      <p>
+        We can add the 'active' or 'disabled' class to items, just like with
+        buttons/other components in bootstrap
+      </p>
+      <ul class="list-group">
+        <li class="list-group-item disabled">disabled First list group item</li>
+        <li class="list-group-item">Second list group item</li>
+        <li class="list-group-item active">ACTIVE Third list group item</li>
+        <li class="list-group-item">Fourth list group item</li>
+        <li class="list-group-item disabled">disabled Fifth list group item</li>
+      </ul>
+      <p>
+        We can also make our list items into buttons, or give them 'actions!'
+      </p>
+      <p>Example of anchor tags:</p>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action active">
+          ACTIVE
+        </a>
+        <a href="#" class="list-group-item list-group-item-action"
+          >Dapibus ac facilisis in</a
+        >
+        <a href="#" class="list-group-item list-group-item-action"
+          >Morbi leo risus</a
+        >
+        <a href="#" class="list-group-item list-group-item-action"
+          >Porta ac consectetur ac</a
+        >
+        <a href="#" class="list-group-item list-group-item-action disabled"
+          >Vestibulum at eros</a
+        >
+      </div>
+      <p>
+        Also keep in mind we DON'T use the btn class in these list items, it's
+        just < button > < /button>
+      </p>
+      <div class="list-group">
+        <button type="button" class="list-group-item list-group-item-action">
+          Cras justo odio
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">
+          Dapibus ac facilisis in
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">
+          Morbi leo risus
+        </button>
+        <button type="button" class="list-group-item list-group-item-action">
+          Porta ac consectetur ac
+        </button>
+        <button
+          type="button"
+          class="list-group-item list-group-item-action"
+          disabled
+        >
+          Vestibulum at eros
+        </button>
+      </div>
+      <p>We can also add colors:</p>
+      <ul class="list-group">
+        <li class="list-group-item">Dapibus ac facilisis in</li>
+
+        <li class="list-group-item list-group-item-primary">
+          A simple primary list group item
+        </li>
+        <li class="list-group-item list-group-item-secondary">
+          A simple secondary list group item
+        </li>
+        <li class="list-group-item list-group-item-success">
+          A simple success list group item
+        </li>
+        <li class="list-group-item list-group-item-danger">
+          A simple danger list group item
+        </li>
+        <li class="list-group-item list-group-item-warning">
+          A simple warning list group item
+        </li>
+        <li class="list-group-item list-group-item-info">
+          A simple info list group item
+        </li>
+        <li class="list-group-item list-group-item-light">
+          A simple light list group item
+        </li>
+        <li class="list-group-item list-group-item-dark">
+          A simple dark list group item
+        </li>
+      </ul>
+      <p>FLEX-INSIDE OUR LIST GROUP:</p>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between">
+          Hello world<span class="text-muted">2020</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Goodbye world<span class="text-muted">2021</span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          Hello again world<span class="text-muted">2022</span>
+        </li>
+      </ul>
+      <p>LIST GROUP + GRID SYSTEM SET TO COL-6, so 6/12 of our units</p>
+      <div class="row">
+        <div class="col-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              Hello world<span class="text-muted">2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Goodbye world<span class="text-muted">2021</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Hello again world<span class="text-muted">2022</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              Hello world<span class="text-muted">2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Goodbye world<span class="text-muted">2021</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Hello again world<span class="text-muted">2022</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>We can also add resposiveness: col-sm-6 mt-4</p>
+      <div class="row">
+        <div class="col-sm-6 mt-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              Hello world<span class="text-muted">2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Goodbye world<span class="text-muted">2021</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Hello again world<span class="text-muted">2022</span>
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 mt-4">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item d-flex justify-content-between">
+              Hello world<span class="text-muted">2020</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Goodbye world<span class="text-muted">2021</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              Hello again world<span class="text-muted">2022</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        So those are list groups, we need to understand them because we'll be
+        using them inside of cards
+      </p>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
