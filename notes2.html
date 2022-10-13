@@ -936,7 +936,519 @@
         using them inside of cards
       </p>
     </div>
+    <div class="container">
+      <p class="h2 text-center"><u>CARDS BASICS</u></p>
+      <p class="h3">
+        Bootstrap cards provide a flexible / extensible container with multiple
+        variants and options
+      </p>
+      <p class="h3">Let's start with a basic card:</p>
+      <div class="card">
+        <div class="card-body">This is text within a card body</div>
+      </div>
+      <div class="card mt-4 offset-3" style="width: 18rem">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-6 offset-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Some lorem</h5>
+              <h6 class="card-subtitle text-muted mb-2">Some lorem below</h6>
+              <p class="card-text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Assumenda est, numquam nulla quis dolores mollitia quasi, ullam
+                accusamus debitis ea doloremque sequi. Perferendis temporibus
+                voluptatem iure illo! Eos, itaque voluptate? Fugit expedita quam
+                consequatur enim aperiam obcaecati nihil, voluptatibus
+                voluptatem facere reprehenderit ratione veniam laboriosam vitae
+                delectus blanditiis autem incidunt labore. Animi culpa hic
+                quibusdam minima voluptate delectus dolore doloribus.
+              </p>
+              <a href="" class="card-link">First link</a>
+              <a href="" class="card-link">Second link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <div class="card">
+              <div class="card-header">Card header</div>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">First list-group-item</li>
+                <li class="list-group-item">Second list-group-item</li>
+                <li class="list-group-item">Third list-group-item</li>
+              </ul>
+              <div class="card-footer">Card footer</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mt-4">
+        <div class="card">
+          <div class="card-header">
+            CArd header
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">First list-group-item</li>
+              <li class="list-group-item">Second list-group-item</li>
+              <li class="list-group-item">Third list-group-item</li>
+            </ul>
+            <div class="card-footer">card footer</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 mt-4">
+        <div class="card">
+          <div class="card-header">
+            HUGE CARD
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">First list-group-item</li>
+              <li class="list-group-item">Second list-group-item</li>
+              <li class="list-group-item">Third list-group-item</li>
+            </ul>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Some lorem</h5>
+                <h6 class="card-subtitle text-muted mb-2">Some lorem below</h6>
+                <p class="card-text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Assumenda est, numquam nulla quis dolores mollitia quasi,
+                  ullam accusamus debitis ea doloremque sequi. Perferendis
+                  temporibus voluptatem iure illo! Eos, itaque voluptate? Fugit
+                  expedita quam consequatur enim aperiam obcaecati nihil,
+                  voluptatibus voluptatem facere reprehenderit ratione veniam
+                  laboriosam vitae delectus blanditiis autem incidunt labore.
+                  Animi culpa hic quibusdam minima voluptate delectus dolore
+                  doloribus.
+                </p>
+                <a href="" class="card-link">First link</a>
+                <a href="" class="card-link">Second link</a>
+              </div>
+            </div>
+            <div class="card-footer">card footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row m-3">
+      <div class="col-lg-4">
+        <div class="card bg-info text-light m-3">
+          <div class="card-header">WITH HEADER</div>
+          <div class="card-body">
+            <h5 class="card-title">3 across</h5>
+            <p class="card-text">three across</p>
+            <a href="" class="card-link">First link</a>
+            <a href="" class="card-link">Second link</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card bg-success text-light m-3">
+          <div class="card-body">
+            <h5 class="card-title">3 across</h5>
+            <p class="card-text">three across</p>
+            <div class="card-footer">NO LINKS</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="card bg-danger text-light m-3">
+          <div class="card-body">
+            <h5 class="card-title">3 across</h5>
+            <p class="card-text">three across</p>
+            <a href="" class="card-link text-info"><b>Bold link</b></a>
+            <a href="" class="card-link text-info">Second link</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <p class="h2 mb-5">We can also give border colors to our cards:</p>
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="card border-primary mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">Primary card title</h5>
+            <p class="card-text">
+           This card is using: "container-fluid d-flex justify-content-center",
+           the below cards are not
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="card border-secondary mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-secondary">
+            <h5 class="card-title">Secondary card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-success mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-success">
+            <h5 class="card-title">Success card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-danger">
+            <h5 class="card-title">Danger card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-warning mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-warning">
+            <h5 class="card-title">Warning card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-info mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-info">
+            <h5 class="card-title">Info card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-light mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body">
+            <h5 class="card-title">Light card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+        <div class="card border-dark mb-3" style="max-width: 18rem">
+          <div class="card-header">Header</div>
+          <div class="card-body text-dark">
+            <h5 class="card-title">Dark card title</h5>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+      <h2>
+        <u>
+          Cards with images
+        </u>
+      </h2>
+      </div>
+      <div class="container-fluid d-flex justify-content-center">
+      <p class="h3 mt-4 ml-2 mb-3 justify-content-center">
+        Next up is cards with images, adding images to the top, bottom 
+        or an overlay, and we can duplicate the whole thing with adding an 
+        addition 'col-6' or 'col' before the end of our container div
+      </p>
+      </div>
+      <div class="container-fluid d-flex justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1445280471656-618bf9abcfe0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1468&q=80" alt="" class="card-img-top">
+              <div class="card-body">
+             <p class="h5 card-title d-flex justify-content-center">
+                Autumn 
+             </p>
+             <h6 class="card-subtitle text-muted mt-2 mb-2">
+                  Subtitle text
+             </h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo inventore sint mollitia asperiores nesciunt amet 
+              magni et doloribus reiciendis, debitis perspiciatis fugit 
+              sequi vitae dignissimos unde quia, accusamus qui molestiae.
+            </p>
+              </div>
+          </div>
+        </div>
 
+        <style>
+
+.card-img-top {
+    width: 100%;
+    height: 50vh;
+    object-fit: cover;
+}
+        </style>
+        <div class="col-md-6">
+          <div class="card">
+            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1548781058-20cc6d895789?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80" alt="" class="card-img-top">
+              <div class="card-body">
+             <p class="h5 card-title d-flex justify-content-center">
+                Autumn 
+             </p>
+             <h6 class="card-subtitle text-muted mt-2 mb-2">
+                  Subtitle text
+             </h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo inventore sint mollitia asperiores nesciunt amet 
+              magni et doloribus reiciendis, debitis perspiciatis fugit 
+              sequi vitae dignissimos unde quia, accusamus qui molestiae.
+            </p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid mt-4">
+      <p class="h3 mt-4">
+        Okay so above I was having some trouble making the images the same size, one card 
+        was significantly larger due to it's image, so I found this on stack overflow:</p>
+        <p class="h3 mt-4">
+          Try this in your css:
+
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+Adjust the height vw as you see fit. The object-fit: cover enables zoom instead of image stretching.
+
+
+        </p>
+        <p class="h3 mt-4">
+          And after adding the 'class="card-img-top img-fluid"' before the image src, fixed 
+          the problem, I did change the vh from 15 to 50 for my case.
+        </p>
+    </div>
+    <div class="container mt-3">
+      <h2>
+        OVERLAYS
+      </h2>
+      <p class="h3 mt-2">
+Next we'll set up an overlay, which needs to be calibrated to exactly 
+how you'd like to see it, also need to be aware of contrast with 
+the images, let's try to find a dark image to illustrate this
+      </p>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+      <div class="row justify-content-center">
+            <div class="col-xl-none">
+              <div class="card text-white">
+               <img src="https://images.unsplash.com/photo-1604348514420-866d5878cf08?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80" alt="" class="card-img">
+               <div class="card-img-overlay">
+                   <h5 class="card-title">Dark image overlay</h5>
+                   <h5 class="card-subtitle text-muted mb-2"></h5>
+                   <p class="card-text">This is a dark image overlay</p>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <div class="container-fluid d-flex justify-content-center mt-4">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="card text-success">
+                    <img src="https://images.unsplash.com/photo-1514917860136-ee8b88e8c9c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+                      <div class="card-img-overlay">
+                        <h5 class="card-title">Light image overlay</h5>
+                        <h5 class="card-subtitle text-muted mb-2"></h5>
+                        <p class="card-text">This is a light image overlay</p>
+                      </div>
+                    <div class="card-body">
+                     <p class="h5 card-title d-flex justify-content-center">
+                        Autumn 
+                     </p>
+                     <h6 class="card-subtitle text-muted mt-2 mb-2">
+                          Subtitle text
+                     </h6>
+                    <p class="card-text">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                      Explicabo inventore sint mollitia asperiores nesciunt amet 
+                      magni et doloribus reiciendis, debitis perspiciatis fugit 
+                      sequi vitae dignissimos unde quia, accusamus qui molestiae.
+                    </p>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="card text-white">
+                    <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                     <div class="card-img-overlay">
+                      <h5 class="card-title">Dark image overlay</h5>
+                      <h5 class="card-subtitle text-muted mb-2"></h5>
+                      <p class="card-text">This is a dark image overlay</p>
+                     </div>
+                    <div class="card-body">
+                     <p class="h5 card-title d-flex justify-content-center text-danger">
+                        Autumn 
+                     </p>
+                     <h6 class="card-subtitle text-muted mt-2 mb-2">
+                          Subtitle text
+                     </h6>
+                    <p class="card-text text-success">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                      Explicabo inventore sint mollitia asperiores nesciunt amet 
+                      magni et doloribus reiciendis, debitis perspiciatis fugit 
+                      sequi vitae dignissimos unde quia, accusamus qui molestiae.
+                    </p>
+                      </div>
+                  </div>
+                </div>
+                
+                </div>
+                
+                </div>
+                <div class="container m-3 d-flex justify-content-center">
+                  <p class="h2 mt-3">
+Making three cards, and adding 'div class = col-md-4 mt-5' to all three cards,
+to give them some space, and to responsively change at md breakpoint below:
+                  </p>
+                </div>
+                <div class="container-fluid d-flex justify-content-center mt-4">
+                  <div class="row justify-content-center">
+                    <div class="col-md-4 mt-5">
+                      <div class="card text-success">
+                        <img src="https://images.unsplash.com/photo-1514917860136-ee8b88e8c9c9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+                          <div class="card-img-overlay">
+                            <h5 class="card-title">Light image overlay</h5>
+                            <h5 class="card-subtitle text-muted mb-2"></h5>
+                            <p class="card-text">This is a light image overlay</p>
+                          </div>
+                        <div class="card-body">
+                         <p class="h5 card-title d-flex justify-content-center">
+                            Autumn 
+                         </p>
+                         <h6 class="card-subtitle text-muted mt-2 mb-2">
+                              Subtitle text
+                         </h6>
+                        <p class="card-text">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                          Explicabo inventore sint mollitia asperiores nesciunt amet 
+                          magni et doloribus reiciendis, debitis perspiciatis fugit 
+                          sequi vitae dignissimos unde quia, accusamus qui molestiae.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                      <div class="card text-white">
+                        <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                         <div class="card-img-overlay">
+                          <h5 class="card-title">Dark image overlay</h5>
+                          <h5 class="card-subtitle text-muted mb-2"></h5>
+                          <p class="card-text">This is a dark image overlay</p>
+                         </div>
+                        <div class="card-body">
+                         <p class="h5 card-title d-flex justify-content-center text-danger">
+                            Autumn 
+                         </p>
+                         <h6 class="card-subtitle text-muted mt-2 mb-2">
+                              Subtitle text
+                         </h6>
+                        <p class="card-text text-success">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                          Explicabo inventore sint mollitia asperiores nesciunt amet 
+                          magni et doloribus reiciendis, debitis perspiciatis fugit 
+                          sequi vitae dignissimos unde quia, accusamus qui molestiae.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mt-5">
+                      <div class="card text-white">
+                        <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+                         <div class="card-img-overlay">
+                          <h5 class="card-title">Dark image overlay</h5>
+                          <h5 class="card-subtitle text-muted mb-2"></h5>
+                          <p class="card-text">This is a dark image overlay</p>
+                         </div>
+                        <div class="card-body">
+                         <p class="h5 card-title d-flex justify-content-center text-danger">
+                            Autumn 
+                         </p>
+                         <h6 class="card-subtitle text-muted mt-2 mb-2">
+                              Subtitle text
+                         </h6>
+                        <p class="card-text text-success">
+                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                          Explicabo inventore sint mollitia asperiores nesciunt amet 
+                          magni et doloribus reiciendis, debitis perspiciatis fugit 
+                          sequi vitae dignissimos unde quia, accusamus qui molestiae.
+                        </p>
+                          </div>
+                      </div>
+                    </div>
+                    
+                    </div>
+                    
+                    </div>
+                    <div class="container-fluid d-flex justify-content-center mt-4">
+<div class="row justify-content-center">
+  <div class="col-xs-6">
+    <div class="card">
+<img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80" alt="" class="card-img-top">
+<div class="card-body">
+  <h5 class="card-title">Kitchen sink card</h5>
+  <h5 class="card-subtitle text-muted mb-2">kitchen sink</h5>
+  <p class="card-text">some text</p>
+</div>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+First item
+  </li>
+  <li class="list-group-item">
+Second item
+  </li>
+  <li class="list-group-item">
+Third item
+  </li>
+</ul>
+  </div>
+</div>
+    </div>
+    </div>
+    <div class="container mt-3">
+      <h2><u>CARD GROUPS</u></h2>
+          <p class="h3">
+             The last section on cards will go over how to display 
+               cards when we have multiple cards
+            </p>
+        <p class="h3">
+           We can use the grid system, but there are built-in 
+           options as well
+             </p>
+             </div>
+      
+        
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
