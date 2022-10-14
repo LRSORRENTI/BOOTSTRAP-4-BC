@@ -1670,13 +1670,78 @@ Third item
         </p>
       </div>
       <div class="container">
-        <h2 class="text-center mb-4 mt-3"><u>Other bootstrap components</u></h2>
+        <h2 class="text-center mb-4 mt-3 display-3"><u>Other Bootstrap omponents</u></h2>
         <p class="h3">
           Okay this next section for all the various 
           components we haven't gone over yet, a bit of a 
           grab-bag of small, stand-alone things with niche uses
         </p>
-      </div>
+        <h2 class=" display-4 text-center mb-4"><u>Badges</u></h2>
+        <p class="h3">
+          Bagdes themselves are a way of labeling text, often used 
+          for counts with numbers, like notifications, chat messages
+        </p>
+        <p class="h3">
+          To add a badge, we add a span with the class of badge + a color
+        </p>
+        <h3 class="mt-4 mb-4">Inbox <span class="badge-success">11</span></h3>
+        <p class="h3">And if we add a class of 'display-3' on 
+          our badge span, the number grows with it
+        </p>
+        <h3 class="display-3 mt-5">Inbox <span class="badge-success">11</span></h3>
+        <p class="h3">
+          We can change the colors:
+        </p>
+        <h3 class="display-5 mt-5">Inbox <span class="badge-danger">11</span></h3>
+        <h3 class="display-4 mt-5">Inbox <span class="badge-primary">11</span></h3>
+        <h3 class="display-3 mt-5">Inbox <span class="badge-warning">11</span></h3>
+      <p class="h3">
+        We can also do them in-line, inside of a button or for some sort 
+        of heading 
+      </p>
+    <button class="btn-info btn">Unread Messages<span class="badge badge-light ml-2">3</span></h3></button>
+  <p class="h3 mt-4">An important thing to note, if someone's using a screen 
+    reader or an assistive technology, this badge isn't very helpful
+  </p>    
+  <p class="h3 mt-4">To fix this we can 
+    use a class of 'sr-only' inside of another span on our button, the 
+    'sr' is for Screen Reader Only, without that class, it's unclear 
+    for someone using assistive technologies what the '3' means on our 
+    button
+  </p>
+  <p class="h3 mt-4">
+    We can also add 'pills' to change the shape of the badge, making it 
+    a little more rounded / visually appealing
+  </p>
+  
+  <h3 class="display-5 mt-5">Inbox <span class="badge badge-pill badge-danger">11</span></h3>
+  <h3 class="display-4 mt-5">Inbox <span class="badge badge-pill badge-primary">11</span></h3>
+  <h3 class="display-3 mt-5">Inbox <span class="badge badge-pill badge-warning">11</span></h3>
+  <p class="h3 mt-3">
+    We can also move them around by adding a 'd-flex' on one of our 'h3's,
+    or elements
+  </p>
+  
+  <h3 class="d-flex justify-content-center display-5 mt-5">Inbox JC-center <span class="badge badge-pill badge-danger">11</span></h3>
+  <h3 class="d-flex justify-content-end display-4 mt-5">Inbox JC-end<span class="badge badge-pill badge-primary">11</span></h3>
+  <h3 class="display-3 mt-5">Inbox NO JC <span class="badge badge-pill badge-warning">11</span></h3>
+  <h3 class="d-flex justify-content-between display-5 mt-5">Inbox JC-between<span class="badge badge-pill badge-danger">11</span></h3>
+<p class="h3 mt-3 mb-3">Using bagdes with list groups:</p>
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    d-flex justify-content-between align-items-center
+    <span class="badge badge-primary badge-pill">14</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-around align-items-center">
+    d-flex justify-content-around align-items-center
+    <span class="badge badge-primary badge-pill">2</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-center align-items-center">
+    d-flex justify-content-center align-items-center
+    <span class="badge badge-primary badge-pill">1</span>
+  </li>
+</ul>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
