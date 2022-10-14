@@ -1436,19 +1436,247 @@ Third item
 </div>
     </div>
     </div>
-    <div class="container mt-3">
-      <h2><u>CARD GROUPS</u></h2>
+    <div class="container mt-3 mb-5">
+      <h2 class="display-3 text-center"><u>CARD GROUPS</u></h2>
           <p class="h3">
              The last section on cards will go over how to display 
-               cards when we have multiple cards
+               cards when we have multiple
             </p>
         <p class="h3">
            We can use the grid system, but there are built-in 
            options as well
              </p>
+             <p class="h3">
+              If we want to have cards in a row together, we use 
+              the 'card group' command, and those cards will be equal height,
+
+             </p>
+             <p class="h3">
+              Let's demo this now
+             </p>
              </div>
-      
-        
+<div class="container">
+  <h2 class="display-3 text-center"><u>Card Group Layout</u></h2>
+  <div class="card-group">
+   <div class="card mb-3">
+     <img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80" alt="" class="card-img-top">
+   <div class="card-body">
+     <h5 class="card-title">Autumnal</h5>
+     <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+     <p class="card-text">Lorem ipsum dolor sit amet, consectetur 
+       adipisicing elit. Sequi, quo cumque cupiditate unde rem quam sit,
+        tempore libero atque nam, ratione accusamus totam eveniet
+        voluptatibus est! Aliquam voluptatibus facere maxime.
+     </p>
+   </div>
+   </div>
+   <div class="card mb-3">
+     <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+   <div class="card-body">
+     <h5 class="card-title">Autumnal</h5>
+     <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+         optio quae sint, dolores accusantium molestias laboriosam doloribus 
+         distinctio doloremque odio velit vitae. Ipsum nisi 
+       placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+     </p>
+   </div>
+   </div>
+  </div>
+  <p class="h2">So that is a card group, similar to what I tried to do above 
+    yesterday, except I put 3 cards inside of a container set to row, then at 
+    a small breakpoint change it to column, but I had to do a lot of margin 
+    and padding and it took longer, using card groups must save time
+  </p>
+</div>
+      <div class="container">
+        <h2>Card Decks</h2>
+        <p class="h3">
+          Card decks are similar but they're not attached to each other, but 
+          instead of declaring 'card group', we use 'card deck'
+        </p>
+      </div>
+      <div class="container">
+        <h2 class="display-3 text-center"><u>Card Deck Layout</u></h2>
+        <div class="card-deck">
+         <div class="card mb-3">
+           <img src="https://images.unsplash.com/photo-1507371341162-763b5e419408?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1039&q=80" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">Autumnal</h5>
+           <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+           <p class="card-text">Lorem ipsum dolor sit amet, consectetur 
+             adipisicing elit. Sequi, quo cumque cupiditate unde rem quam sit,
+              tempore libero atque nam, ratione accusamus totam eveniet
+              voluptatibus est! Aliquam voluptatibus facere maxime.
+           </p>
+         </div>
+         <div class="card-footer">
+          This is a footer
+         </div>
+         </div>
+         <div class="card mb-3">
+           <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+         <div class="card-body">
+           <h5 class="card-title">Autumnal</h5>
+           <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+           <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+               optio quae sint, dolores accusantium molestias laboriosam doloribus 
+               distinctio doloremque odio velit vitae. Ipsum nisi 
+             placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+           </p>
+         </div>
+         <div class="card-footer">Another footer</div>
+         </div>
+         <div class="card mb-3">
+          <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Autumnal</h5>
+          <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+             elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+              optio quae sint, dolores accusantium molestias laboriosam doloribus 
+              distinctio doloremque odio velit vitae. Ipsum nisi 
+            placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+          </p>
+        </div>
+        <div class="card-footer">Another footer</div>
+        </div>
+        </div>
+        <p class="h2">So.... If I'd waited until today I wouldn't have spent 
+          all that time yesterday replicating a 'card deck' in a container div, using 
+          margin and padding and a lot of tweaking.... Well good practice at least
+        </p>
+      </div>
+      <div class="container">
+<h2 class="display-3 text-center"><u>Card Columns</u></h2>
+<p class="h3">There's this thing called 'masonry' which they talk 
+  about in the official documentation, and it's a well-known tool 
+  for arranging images, where you can take images / sections of 
+  different sizes and create a cascading wall of them, as the name 
+  masonry implies, they do look similar to an arrangement of bricks
+</p>
+<p class="h3">
+  We can do this with card columns, and it works the same as 'card group' 
+  or 'card deck', we just instead specify 'card-column' instead, let's test it 
+  out!
+</p>
+      </div>
+      <div class="container mt-5">
+        <div class="card-columns">
+          <div class="card mb-3">
+            <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Autumnal</h5>
+            <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+               elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+                optio quae sint, dolores accusantium molestias laboriosam doloribus 
+                distinctio doloremque odio velit vitae. Ipsum nisi 
+              placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+            </p>
+          </div>
+          <div class="card-footer">Another footer</div>
+          </div>
+          <div class="card">
+            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1548781058-20cc6d895789?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80" alt="" class="card-img-top">
+              <div class="card-body">
+             <p class="h5 card-title d-flex justify-content-center">
+                Autumn 
+             </p>
+             <h6 class="card-subtitle text-muted mt-2 mb-2">
+                  Subtitle text
+             </h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo inventore sint mollitia asperiores nesciunt amet 
+              magni et doloribus reiciendis, debitis perspiciatis fugit 
+              sequi vitae dignissimos unde quia, accusamus qui molestiae.
+            </p>
+              </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top img-fluid" src="https://images.unsplash.com/photo-1548781058-20cc6d895789?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80" alt="" class="card-img-top">
+              <div class="card-body">
+             <p class="h5 card-title d-flex justify-content-center">
+                Autumn 
+             </p>
+             <h6 class="card-subtitle text-muted mt-2 mb-2">
+                  Subtitle text
+             </h6>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo inventore sint mollitia asperiores nesciunt amet 
+              magni et doloribus reiciendis, debitis perspiciatis fugit 
+              sequi vitae dignissimos unde quia, accusamus qui molestiae.
+            </p>
+              </div>
+          </div>
+          <div class="card mb-3">
+            <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Autumnal</h5>
+            <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+               elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+                optio quae sint, dolores accusantium molestias laboriosam doloribus 
+                distinctio doloremque odio velit vitae. Ipsum nisi 
+              placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+            </p>
+          </div>
+          <div class="card-footer">Another footer</div>
+          </div>
+          <div class="card">
+            <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Autumnal</h5>
+            <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+               elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+                optio quae sint, dolores accusantium molestias laboriosam doloribus 
+                distinctio doloremque odio velit vitae. Ipsum nisi 
+              placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+            </p>
+          </div>
+          <div class="card-footer">Another footer</div>
+          </div>
+          <div class="card mb-5">
+            <img src="https://images.unsplash.com/photo-1635055658722-494d99b8aebd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Autumnal</h5>
+            <h6 class="card-subtitle text-muted">Autumn lorem</h6>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+               elit. Dolorem ea sapiente, blanditiis nesciunt non consequuntur harum
+                optio quae sint, dolores accusantium molestias laboriosam doloribus 
+                distinctio doloremque odio velit vitae. Ipsum nisi 
+              placeat consectetur dolor et dignissimos illum molestiae fugiat amet.
+            </p>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="display-5 text-center mb-3">That's a mason-like card structure using 
+          the 'card-column' component
+        </h2>
+        <p class="h3">
+          To summarize we had 'card deck' where the cards are attached, 
+          we had 'card deck' where they're together but spaced apart, 
+          then we had 'card-columns' which creates a mason like effect
+        </p>
+        <p class="h3">
+          Once we get into SASS we'll customize things even further!
+        </p>
+      </div>
+      <div class="container">
+        <h2 class="text-center mb-4 mt-3"><u>Other bootstrap components</u></h2>
+        <p class="h3">
+          Okay this next section for all the various 
+          components we haven't gone over yet, a bit of a 
+          grab-bag of small, stand-alone things with niche uses
+        </p>
+      </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
