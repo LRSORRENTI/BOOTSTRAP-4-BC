@@ -15,7 +15,7 @@
     <style>
       body {
         background-color: lightseagreen;
-        color: azure;
+        color: black;
       }
     </style>
     <h1 class="text-center mt-4">
@@ -247,6 +247,74 @@
         And you close them by clicking the element that has the pop-over
         data-toggle set to
       </p>
+      <p class="h3 mt-4">
+        Pop-overs look similar to tooltips, but they have a title, they're
+        styled slightly differently, and they stay, unlike a tooltip which will
+        auto-undisplay when the cursor moves
+      </p>
+      <p class="h3 mt-4">
+        Another note is that these are NOT automatically set up, just like
+        tooltips, pop-overs need to have JavaScript set to them, otherwise
+        they'll have zero functionality
+      </p>
+      <p class="h3 mt-4">
+        It's the 'popper.js file' we're including at the bottom of our html file
+        that allows this to function, so always make sure that script src is
+        present, AND more importantly, put any of our own JS inside of script
+        tags BENEATH all three boilerplate script src tags
+      </p>
+      <p class="h3 mt-4">Let's demo this on a button:</p>
+      <p class="d-flex justify-content-center">
+        <button
+          class="btn btn-danger btn-lg p-6"
+          data-toggle="popover"
+          title="popover title here"
+          data-content="This is a popover"
+        >
+          Click me
+        </button>
+      </p>
+      <button
+        class="btn btn-lg btn-danger"
+        data-toggle="popover"
+        title="Dismissible popover text-danger"
+        data-content="And here's some amazing content. It's very engaging. 
+      Right?"
+      >
+        Dismissible popover
+      </button>
+    </div>
+    <div class="container">
+      <h3 class="mt-4">
+        Also note, it's best to include our own scripts for enabling tooltips
+        and popovers in separate js files, and link them with script src,
+        similar to how we link jquery, popper, and bootstrap js at the bottom of
+        the html file, remember the order MATTERS, we include ours at the bottom
+      </h3>
+      <button
+        type="button"
+        class="btn btn-lg btn-danger"
+        data-toggle="popover"
+        title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?"
+      >
+        Click to toggle popover
+      </button>
+    </div>
+    <div class="container">
+      <p class="h3 mt-4">
+        I was having trouble viewing the top section of my popover, after
+        checking, it was due to the style tag at the top of my page setting the
+        font color of the entire html page to white. After setting my main style
+        font to black, the top portion of the popover displays. Probably
+        shouldn't have conflicting style tags, but I'm just taking notes, I'll
+        need to pay attention to all of my style tags
+      </p>
+      <p class="h3 mt-4">
+        Also note that we could get more specific in our JS by adding unique
+        id's to our elements that we want, vs enabling popovers or tooltips on
+        the entire page, we can select them individually with JavaScript
+      </p>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -266,6 +334,7 @@
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
       });
     </script>
   </body>
