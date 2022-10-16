@@ -100,6 +100,138 @@
         And inside of this block we'll display useful information, as concise as
         possible, huge tooltips aren't very visually appealing
       </p>
+      <p class="h3 mt-4">
+        <b>
+          Tooltips are opt-in for performance reasons, we need to initialize
+          them ourselves, with tooltips and pop-overs we need to add a little
+          JavaScript on our own</b
+        >
+      </p>
+      <p class="h3 mt-4">
+        To create a tooltip, we make a button, or a link or something, give it
+        'data-toggle="tooltip" inside the "class="
+      </p>
+      <p class="h3 mt-4">
+        button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="top" title="Tooltip on top"
+      </p>
+      <p class="h3 mt-4">
+        After we include our data-toggle, we need to include our JavaScript,
+      </p>
+      <p class="h2 display-4">
+        <b
+          ><u
+            >VERY IMPORTANT!! WE INCLUDE THIS JavaScript AFTER THE 3 'JavaScript
+            SCRIPT SRC' THAT WE INCLUDE WHEN USING Bootstrap, SO BELOW THOSE
+            THREE, THAT'S WHERE WE INCLUDE OUR JS
+          </u></b
+        >
+      </p>
+      <p class="h3 mt-4">
+        " And yes, after including script: $(function () {
+        $('[data-toggle="tooltip"]').tooltip(); }); below our three bootstrap
+        boilerplate script tags,
+        <u
+          class="data-toggle"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="tooltip hover bottom"
+          >hovering displays the tooltip</u
+        >, so we need our main JS to load first, then we include our JS for the
+        tooltip
+      </p>
+      <p class="h3 mt-4">
+        Essentially what this code is doing is searching for anything that has
+        the class 'data-toggle' set to 'tooltip', and where to display it with
+        the 'data-placement = top, bottom, left, or right'
+      </p>
+      <p class="h3 mt-4">
+        <button
+          type="button"
+          class="btn btn-lg btn-success"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Tooltip on top"
+        >
+          Tooltip Hover
+        </button>
+      </p>
+      <p class="h3 mt-4">Let's do another</p>
+      <button
+        class="btn btn-info btn-lg p-4"
+        data-toggle="tooltip p-4"
+        data-placement="bottom"
+        title="Tooltip on bottom"
+      >
+        No 'type="button"' inside this button', tooltip follows cursor
+      </button>
+      <p class="h3 mt-4">
+        <button
+          type="button"
+          class="btn btn-lg btn-success"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Tooltip on top"
+        >
+          'type="button" inside this button'
+        </button>
+      </p>
+      <p class="h4 mt-4">
+        So omitting the 'type="button"' the tooltip displays where the cursor is
+        exactly, but after adding the 'type="button", it displays on the
+        specified data-placement side
+      </p>
+      <p class="h3 mt-4">We can also add them on links:</p>
+      <p class="h3 mt-4">
+        Here's a tooltip link:
+        <a
+          type="link"
+          class="text-danger display-4"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="tooltip anchor tag right"
+          ><b><u>tooltip</u></b></a
+        >
+      </p>
+      <p class="h3 mt-4">We can also add custom html inside our title:</p>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+      >
+        Tooltip with HTML
+      </button>
+      <p class="h3 mt-4">
+        And with disabled elements:
+        <span
+          class="d-inline-block"
+          tabindex="0"
+          data-toggle="tooltip"
+          title="Disabled tooltip"
+        >
+          <button
+            class="btn btn-primary"
+            style="pointer-events: none"
+            type="button"
+            disabled
+          >
+            Disabled button
+          </button>
+        </span>
+      </p>
+      <p class="h3 mt-4">
+        Lorem ipsum dolor sit amet
+        <a
+          class="text-danger"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="tooltip in paragraph left"
+          ><b>consectetur</b></a
+        >
+        adipisicing elit. In, voluptates.
+      </p>
     </div>
     <div class="container">
       <h2 class="d-flex justify-content-center display-3">
@@ -131,5 +263,10 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    </script>
   </body>
 </html>
