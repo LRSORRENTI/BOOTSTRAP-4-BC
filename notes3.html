@@ -15,7 +15,7 @@
     <style>
       body {
         background-color: lightseagreen;
-        color: azure;
+        color: black;
       }
     </style>
     <h1 class="text-center mt-4">
@@ -83,7 +83,239 @@
         you click, it dissappears
       </p>
     </div>
-
+    <div class="container">
+      <h2 class="d-flex justify-content-center display-3">
+        <b><u>Tooltips</u></b>
+      </h2>
+      <p class="h3 mt-3">
+        Tooltips are relatively simple, and they go along with another component
+        we'll go over next called 'pop=overs', they're very similar
+      </p>
+      <p class="h3 mt-4">
+        So a tooltip is creating a block of text that appears when your cursor
+        hovers over a specified section, and we can display this block of text
+        on the top, left, right, or bottom.
+      </p>
+      <p class="h3 mt-4">
+        And inside of this block we'll display useful information, as concise as
+        possible, huge tooltips aren't very visually appealing
+      </p>
+      <p class="h3 mt-4">
+        <b>
+          Tooltips are opt-in for performance reasons, we need to initialize
+          them ourselves, with tooltips and pop-overs we need to add a little
+          JavaScript on our own</b
+        >
+      </p>
+      <p class="h3 mt-4">
+        To create a tooltip, we make a button, or a link or something, give it
+        'data-toggle="tooltip" inside the "class="
+      </p>
+      <p class="h3 mt-4">
+        button type="button" class="btn btn-secondary" data-toggle="tooltip"
+        data-placement="top" title="Tooltip on top"
+      </p>
+      <p class="h3 mt-4">
+        After we include our data-toggle, we need to include our JavaScript,
+      </p>
+      <p class="h2 display-4">
+        <b
+          ><u
+            >VERY IMPORTANT!! WE INCLUDE THIS JavaScript AFTER THE 3 'JavaScript
+            SCRIPT SRC' THAT WE INCLUDE WHEN USING Bootstrap, SO BELOW THOSE
+            THREE, THAT'S WHERE WE INCLUDE OUR JS
+          </u></b
+        >
+      </p>
+      <p class="h3 mt-4">
+        " And yes, after including script: $(function () {
+        $('[data-toggle="tooltip"]').tooltip(); }); below our three bootstrap
+        boilerplate script tags,
+        <u
+          class="data-toggle"
+          data-toggle="tooltip"
+          data-placement="bottom"
+          title="tooltip hover bottom"
+          >hovering displays the tooltip</u
+        >, so we need our main JS to load first, then we include our JS for the
+        tooltip
+      </p>
+      <p class="h3 mt-4">
+        Essentially what this code is doing is searching for anything that has
+        the class 'data-toggle' set to 'tooltip', and where to display it with
+        the 'data-placement = top, bottom, left, or right'
+      </p>
+      <p class="h3 mt-4">
+        <button
+          type="button"
+          class="btn btn-lg btn-success"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Tooltip on top"
+        >
+          Tooltip Hover
+        </button>
+      </p>
+      <p class="h3 mt-4">Let's do another</p>
+      <button
+        class="btn btn-info btn-lg p-4"
+        data-toggle="tooltip p-4"
+        data-placement="bottom"
+        title="Tooltip on bottom"
+      >
+        No 'type="button"' inside this button', tooltip follows cursor
+      </button>
+      <p class="h3 mt-4">
+        <button
+          type="button"
+          class="btn btn-lg btn-success"
+          data-toggle="tooltip"
+          data-placement="top"
+          title="Tooltip on top"
+        >
+          'type="button" inside this button'
+        </button>
+      </p>
+      <p class="h4 mt-4">
+        So omitting the 'type="button"' the tooltip displays where the cursor is
+        exactly, but after adding the 'type="button", it displays on the
+        specified data-placement side
+      </p>
+      <p class="h3 mt-4">We can also add them on links:</p>
+      <p class="h3 mt-4">
+        Here's a tooltip link:
+        <a
+          type="link"
+          class="text-danger display-4"
+          data-toggle="tooltip"
+          data-placement="right"
+          title="tooltip anchor tag right"
+          ><b><u>tooltip</u></b></a
+        >
+      </p>
+      <p class="h3 mt-4">We can also add custom html inside our title:</p>
+      <button
+        type="button"
+        class="btn btn-secondary"
+        data-toggle="tooltip"
+        data-html="true"
+        title="<em>Tooltip</em> <u>with</u> <b>HTML</b>"
+      >
+        Tooltip with HTML
+      </button>
+      <p class="h3 mt-4">
+        And with disabled elements:
+        <span
+          class="d-inline-block"
+          tabindex="0"
+          data-toggle="tooltip"
+          title="Disabled tooltip"
+        >
+          <button
+            class="btn btn-primary"
+            style="pointer-events: none"
+            type="button"
+            disabled
+          >
+            Disabled button
+          </button>
+        </span>
+      </p>
+      <p class="h3 mt-4">
+        Lorem ipsum dolor sit amet
+        <a
+          class="text-danger"
+          data-toggle="tooltip"
+          data-placement="left"
+          title="tooltip in paragraph left"
+          ><b>consectetur</b></a
+        >
+        adipisicing elit. In, voluptates.
+      </p>
+    </div>
+    <div class="container">
+      <h2 class="d-flex justify-content-center display-3">
+        <b><u>Pop-over</u></b>
+      </h2>
+      <p class="h3 mt-4">
+        A Pop-over is roughly the same, except you CLICK instead of hover
+      </p>
+      <p class="h3 mt-4">
+        And the Pop-over will stay there, even if your cursor moves
+      </p>
+      <p class="h3 mt-4">
+        And you close them by clicking the element that has the pop-over
+        data-toggle set to
+      </p>
+      <p class="h3 mt-4">
+        Pop-overs look similar to tooltips, but they have a title, they're
+        styled slightly differently, and they stay, unlike a tooltip which will
+        auto-undisplay when the cursor moves
+      </p>
+      <p class="h3 mt-4">
+        Another note is that these are NOT automatically set up, just like
+        tooltips, pop-overs need to have JavaScript set to them, otherwise
+        they'll have zero functionality
+      </p>
+      <p class="h3 mt-4">
+        It's the 'popper.js file' we're including at the bottom of our html file
+        that allows this to function, so always make sure that script src is
+        present, AND more importantly, put any of our own JS inside of script
+        tags BENEATH all three boilerplate script src tags
+      </p>
+      <p class="h3 mt-4">Let's demo this on a button:</p>
+      <p class="d-flex justify-content-center">
+        <button
+          class="btn btn-danger btn-lg p-6"
+          data-toggle="popover"
+          title="popover title here"
+          data-content="This is a popover"
+        >
+          Click me
+        </button>
+      </p>
+      <button
+        class="btn btn-lg btn-danger"
+        data-toggle="popover"
+        title="Dismissible popover text-danger"
+        data-content="And here's some amazing content. It's very engaging. 
+      Right?"
+      >
+        Dismissible popover
+      </button>
+    </div>
+    <div class="container">
+      <h3 class="mt-4">
+        Also note, it's best to include our own scripts for enabling tooltips
+        and popovers in separate js files, and link them with script src,
+        similar to how we link jquery, popper, and bootstrap js at the bottom of
+        the html file, remember the order MATTERS, we include ours at the bottom
+      </h3>
+      <button
+        type="button"
+        class="btn btn-lg btn-danger"
+        data-toggle="popover"
+        title="Popover title"
+        data-content="And here's some amazing content. It's very engaging. Right?"
+      >
+        Click to toggle popover
+      </button>
+    </div>
+    <div class="container">
+      <p class="h3 mt-4">
+        I was having trouble viewing the top section of my popover, after
+        checking, it was due to the style tag at the top of my page setting the
+        font color of the entire html page to white. After setting my main style
+        font to black, the top portion of the popover displays. Probably
+        shouldn't have conflicting style tags, but I'm just taking notes, I'll
+        need to pay attention to all of my style tags
+      </p>
+      <p class="h3 mt-4">
+        Also note that we could get more specific in our JS by adding unique
+        id's to our elements that we want, vs enabling popovers or tooltips on
+        the entire page, we can select them individually with JavaScript
+      </p>
+    </div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -99,5 +331,11 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
   </body>
 </html>
