@@ -89,7 +89,7 @@
       </h2>
       <p class="h3 mt-3">
         Tooltips are relatively simple, and they go along with another component
-        we'll go over next called 'pop=overs', they're very similar
+        we'll go over next called 'pop-overs', they're very similar
       </p>
       <p class="h3 mt-4">
         So a tooltip is creating a block of text that appears when your cursor
@@ -316,6 +316,209 @@
         the entire page, we can select them individually with JavaScript
       </p>
     </div>
+    <div class="container mt-4">
+      <h2 class="d-flex justify-content-center display-3">
+        <b><u>Dropdowns</u></b>
+      </h2>
+      <p class="h3">
+        Bootstrap gives us an easy way of creating dropdowns, using 
+        buttons or links
+      </p>
+      <p class="h3 d-flex justify-content-center">
+        <div class="dropdown d-flex justify-content-center">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+        
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+      </p>
+    </div>
+    <div class="container">
+    <p class="h3">
+      We make a div class = dropdown, then we have 
+      a button class type = button, id = dropdownMenuButton, 
+      data-toggle=dropdown, then under the button class we add 
+      the menu of items
+    </p>
+    <div class="container mt-4 mb-4">
+      <p class="h3">
+        We can also change the size and color of them:
+      </p>
+      <!-- Large button groups (default and split) -->
+<div class="btn-group">
+  <button class="btn btn-danger btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Large button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+<div class="btn-group">
+  <button class="btn btn-primary btn-lg" type="button">
+    Large split button
+  </button>
+  <button type="button" class="btn btn-lg btn-warning dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<!-- Small button groups (default and split) -->
+<div class="btn-group">
+  <button class="btn btn-info btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Small button
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+<div class="btn-group">
+  <button class="btn btn-success btn-sm" type="button">
+    Small split button
+  </button>
+  <button type="button" class="btn btn-sm btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <div class="dropdown-menu">
+    ...
+  </div>
+</div>
+    </div>
+    </div>
+    <div class="container mt-4 mb-4">
+      <p class="h2">
+        We can also make them drop right or left:
+      </p>
+      <!-- Default dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropright
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item active" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+
+<!-- Split dropright button -->
+<div class="btn-group dropright">
+  <button type="button" class="btn btn-secondary">
+    Split dropright
+  </button>
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item active" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item disabled" href="#">Something else here</a>
+  </div>
+</div>
+<div class="btn-group dropleft d-flex justify-content-center">
+  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+   Drop left
+    <span class="sr-only">Toggle Dropright</span>
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item active" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item disabled" href="#">Something else here</a>
+  </div>
+</div>
+    </div>
+    <div class="container p-6 mb-6">
+      <p class="h3 d-flex justify-content-center">Let's do another 
+        but add a header and a divider:
+      </p>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header">Dropdown header</h6>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+    
+    <div class="btn-group dropright d-flex justify-content-center mt-4 mb-4">
+      <button type="button" class="btn btn-lg btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Dropright
+      </button>
+      <div class="dropdown-menu">
+        <h6 class="dropdown-header">Dropdown header</h6>
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item active" href="#">Sign in</a>
+        <a class="dropdown-item" href="#">Sign out</a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#">Separated link</a>
+      </div>
+    </div>
+      <p class="h3">
+        We can also do dropdown forms
+      </p>
+      <div class="btn-group dropright d-flex justify-content-center mt-4 mb-4">
+        <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Large button
+        </button>
+        <div class="dropdown-menu">
+          <form class="px-4 py-3">
+            <div class="form-group">
+              <label for="exampleDropdownFormEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleDropdownFormPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+            </div>
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="dropdownCheck">
+              <label class="form-check-label" for="dropdownCheck">
+                Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Sign in</button>
+          </form>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">New around here? Sign up</a>
+          <a class="dropdown-item" href="#">Forgot password?</a>
+        </div>
+      </div>
+  <p class="h3">Important to note, for this to work,
+    it must be inside of a button div
+  </p>
+  <div class="btn-group dropleft d-flex justify-content-center">
+    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+     Drop left
+      <span class="sr-only">Toggle Dropright</span>
+    </button>
+    <div class="dropdown-menu p-4 text-muted" style="max-width: 200px;">
+      <p>
+        Some example text that's free-flowing within the dropdown menu.
+      </p>
+      <p class="mb-0">
+        And this is more example text.
+      </p>
+    </div>
+  
+  </div>
+<div class="container">
+  <p class="h2">
+    Also notes dropdowns are commonly used with navbars, even 
+    on the bootstrap homepage, the top navbar has a dropdown for 
+    the version of bootstrap button
+  </p>
+</div>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
