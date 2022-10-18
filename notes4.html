@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: rgb(137, 241, 198);
+        color: darkblue;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        font-size: 27px;
+      }
+    </style>
+    <div class="container mb-4">
+      <h1 class="d-flex justify-content-center display-3 mb-4">
+        <u>Notes 4</u>
+      </h1>
+    </div>
+    <div class="container mt-3">
+      <h2 class="d-flex justify-content-center mt-4">
+        <b><u>Collapse</u></b>
+      </h2>
+      <p class="h3 mt-3 d-flex justify-content-center">
+        Collapse isn't exactly it's own component, rather it's a JavaScript
+        plug-in
+      </p>
+      <p>We add a few pieces to existing components, to show / hide content</p>
+      <p>
+        Essentially it's a way of connecting a button or a link to another peice
+        of content you want to display
+      </p>
+      <p>
+        To start we need to make a button or a link, then we set the
+        'data-toggle="collapse"' inside or anchor or button tag, then we specify
+        an href="#paragraphOne" or whatever html content, but we need to
+        remember to give the element the id, then link that id in our div /
+        button / anchor tag
+      </p>
+      <p>Here's an example:</p>
+    </div>
+
+    <div class="container mt-3">
+      <h2 class="display-3 text-center">Collapse Ex.</h2>
+      <a href="#contentOne" class="btn btn-success" data-toggle="collapse"
+        >Click me!</a
+      >
+      <div class="collapse" id="contentOne">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo repellat
+        optio omnis pariatur repellendus, quasi sit distinctio, et qui rerum
+        natus amet odio earum placeat? Omnis saepe id dolorem magnam?
+      </div>
+    </div>
+    <div class="container mt-3">
+      <h2 class="display-3 text-center">Card Collapse:</h2>
+      <a href="#content2" class="btn btn-info" data-toggle="collapse">
+        Collapse!
+      </a>
+      <div class="collapse" id="content2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Collapsing!</h4>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis animi
+            reprehenderit maxime sapiente corrupti? Aliquam at vitae, commodi
+            optio impedit veniam rem deleniti vero magni provident reprehenderit
+            alias in deserunt.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <p class="justify-content-around">
+        <a
+          class="btn btn-primary"
+          data-toggle="collapse"
+          href="#collapseExample"
+          role="button"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Link with href
+        </a>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#collapseExample"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          Button with data-target
+        </button>
+      </p>
+      <div class="collapse" id="collapseExample">
+        <div class="card card-body bg-dark text-light">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+          terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+          labore wes anderson cred nesciunt sapiente ea proident.
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <p>We can also target multiple elements:</p>
+      <p class="d-flex justify-content-between">
+        <a
+          class="btn btn-primary"
+          data-toggle="collapse"
+          href="#multiCollapseExample1"
+          role="button"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1"
+          >Toggle first element</a
+        >
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target="#multiCollapseExample2"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample2"
+        >
+          Toggle second element
+        </button>
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-toggle="collapse"
+          data-target=".multi-collapse"
+          aria-expanded="false"
+          aria-controls="multiCollapseExample1 multiCollapseExample2"
+        >
+          Toggle both elements
+        </button>
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample1">
+            <div class="card card-body bg-success text-dark">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="collapse multi-collapse" id="multiCollapseExample2">
+            <div class="card card-body bg-danger text-light">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life
+              accusamus terry richardson ad squid. Nihil anim keffiyeh
+              helvetica, craft beer labore wes anderson cred nesciunt sapiente
+              ea proident.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <h2 class="d-flex justify-content-center mt-3">
+        <u><b>Accordions:</b></u>
+      </h2>
+      <p>
+        Accordions are essentially card collections, where we have a set of
+        cards to display, and they're all contained inside of an accordion div,
+        and clicking on a accordion 'key' to display it's 'bellow'
+      </p>
+    </div>
+    <div class="container">
+      <p class="h2">Accordion</p>
+      <div>
+        <div class="accordion" id="accordionExample">
+          <div class="card bg-danger text-light">
+            <div class="card-header" id="headingOne">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link text-light"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  Collapsible Group Item #1
+                </button>
+              </h5>
+            </div>
+
+            <div
+              id="collapseOne"
+              class="collapse show"
+              aria-labelledby="headingOne"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card bg-dark text-light">
+            <div class="card-header" id="headingTwo">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed text-light"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  Collapsible Group Item #2
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseTwo"
+              class="collapse"
+              aria-labelledby="headingTwo"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+          <div class="card bg-warning text-light">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button
+                  class="btn btn-link collapsed text-light"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  Collapsible Group Item #3
+                </button>
+              </h5>
+            </div>
+            <div
+              id="collapseThree"
+              class="collapse"
+              aria-labelledby="headingThree"
+              data-parent="#accordionExample"
+            >
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life
+                accusamus terry richardson ad squid. 3 wolf moon officia aute,
+                non cupidatat skateboard dolor brunch. Food truck quinoa
+                nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua
+                put a bird on it squid single-origin coffee nulla assumenda
+                shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
+                wes anderson cred nesciunt sapiente ea proident. Ad vegan
+                excepteur butcher vice lomo. Leggings occaecat craft beer
+                farm-to-table, raw denim aesthetic synth nesciunt you probably
+                haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <p>
+        That's how we create an accordion, remember these are just cards, that
+        we're using collapse on
+      </p>
+    </div>
+    <div class="container mt-4">
+      <h2 class="d-flex justify-content-center">
+        <u><b>MODALS</b></u>
+      </h2>
+      <p>
+        A modal is a dialogue / pop-up to notify... or annoy your users, often
+        they're not widely used unless you're building a web app where it makes
+        sense to use them, they're useful if your users are editing content /
+        saving things
+      </p>
+      <p>
+        Modals have two parts: the trigger, and the modal itself, and we add tab
+        index, it controls how users can navigate using tab, so if we set
+        tabindex="-1", then we set role = 'dialogue'. for accessibility
+      </p>
+    </div>
+    <div class="container">
+      <h2 class="display-3 text-center">Modal ex:</h2>
+      <!-- trigger -->
+    </div>
+    <div class="container d-flex justify-content-center mt-3">
+      <button
+        class="btn btn-lg btn-info d-flex justify-content-center"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Launch modal
+      </button>
+      <!-- modal window -->
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+              molestiae illo! Nam qui est earum perspiciatis doloribus quae quo
+              et!
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+              <button class="btn btn-success">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4 d-flex justify-content-center">
+      <!-- Button trigger modal -->
+      <button
+        type="button"
+        class="btn btn-lg btn-block p-4 btn-primary d-flex justify-content-center"
+        data-toggle="modal"
+        data-target="#exampleModal"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-4">
+      <h2 class="d-flex justify-content-center">
+        We can even use the grid system inside!
+      </h2>
+    </div>
+    <!-- Button trigger modal -->
+    <div class="container mt-4 d-flex justify-content-center">
+      <button
+        type="button"
+        class="btn btn-lg btn-success"
+        data-toggle="modal"
+        data-target="#exampleModalLong"
+      >
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModalLong"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="exampleModalLongTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">
+                Modal title
+              </h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-md-4">.col-md-4</div>
+                  <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+                  <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-9">
+                    Level 1: .col-sm-9
+                    <div class="row">
+                      <div class="col-8 col-sm-6">
+                        Level 2: .col-8 .col-sm-6
+                      </div>
+                      <div class="col-4 col-sm-6">
+                        Level 2: .col-4 .col-sm-6
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" class="btn btn-primary">
+                Save changes
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
