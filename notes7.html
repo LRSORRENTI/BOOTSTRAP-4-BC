@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      background-color: lightcoral;
+      color: aqua;
+    }
+    p {
+      margin-top: 40px;
+    }
+  </style>
+  <body>
+    <h1 class="display-2 d-flex justify-content-center">
+      <b><u>Setting up Koala + SASS</u></b>
+    </h1>
+
+    <p class="h3">
+      The next section we'll go over how we customize bootstrap, how we can
+      modify the default colors, how we can modify bootstrap so it doesn't look
+      like every other bootstrap website, which is one of the main criticisms of
+      bootstrap
+    </p>
+    <p class="h3">
+      To do this, we need to work with the bootstrap SASS files, SASS being a
+      CSS 'PRE-PROCESSOR', a tool that lets you write shortcuts, add variables
+      into CSS, which is not valid in vanilla CSS, then we press compile, and it
+      returns an equivalent stylesheet
+    </p>
+    <p class="h3">The stylesheet it returns is usually a lot longer</p>
+<p class="h3">
+  And yes, using koala will compile our SASS file into a CSS file, 
+  it seemed to auto-format on save in VScode, I think Koala is connected?
+  Maybe VsCode auto-compiles SASS instead? 
+</p>
+<h2>
+  Meet the Bootstrap Source Files
+</h2>
+<p class="h3">
+Up next we'll look at bootstrap source files, 
+where we can pick and choose the things we want to change, we 
+first need to navigate to the downloads section of bootstrap, 
+and download the source files
+</p>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
