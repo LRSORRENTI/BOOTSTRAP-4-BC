@@ -1,0 +1,13 @@
+body {
+  background-color: #ea7d7d; }
+
+nav {
+  background: yellow;
+  font-size: 20px; }
+  nav li {
+    background: greenyellow; }
+    nav li a {
+      background: purple;
+      font-size: 40px; }
+
+/*# sourceMappingURL=demoKoala.css.map */
