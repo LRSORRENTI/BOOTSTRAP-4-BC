@@ -23,6 +23,14 @@ body{
     min-height: 750px;
     h1{
         font-family: "Questrial", sans-serif;
+        line-height: 1;
+    }
+
+    #book{
+        font-size: 1.5rem;
+        border-radius: 2rem;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -41,6 +49,12 @@ body{
         background: #1f1f1f;
         .nav-link:hover{
             border-bottom: none;
+        }
+    }
+    #showcase{
+        min-height: 500px;
+        h1{
+            font-size: 4rem;
         }
     }
 }
