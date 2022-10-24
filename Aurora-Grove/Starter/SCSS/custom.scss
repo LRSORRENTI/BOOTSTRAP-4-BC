@@ -18,6 +18,24 @@ body{
     }
 }
 
+#showcase {
+    background: url("/images/main.jpeg") bottom center / cover no-repeat;
+    min-height: 750px;
+    h1{
+        font-family: "Questrial", sans-serif;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 @media(max-width: 768px){
     .navbar {
         background: #1f1f1f;
